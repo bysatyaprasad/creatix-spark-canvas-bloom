@@ -6,64 +6,58 @@ import { Button } from '@/components/ui/button';
 const projects = [
   {
     id: 1,
-    title: 'Manhattan Penthouse',
+    title: 'Mumbai Penthouse',
     category: 'Luxury Residential',
-    image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop',
-    description: 'A breathtaking penthouse transformation featuring contemporary elegance and panoramic city views.',
-    value: '$2.8M',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop',
+    description: 'A stunning 4-BHK penthouse combining traditional Indian elements with contemporary luxury in the heart of Mumbai.',
+    value: '₹85 Lakhs',
     year: '2024'
   },
   {
     id: 2,
-    title: 'Beverly Hills Estate',
-    category: 'Luxury Residential',
-    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop',
-    description: 'Modern minimalist design meets California luxury in this stunning hillside retreat.',
-    value: '$4.2M',
+    title: 'Delhi Farmhouse',
+    category: 'Traditional Modern',
+    image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600&h=400&fit=crop',
+    description: 'An elegant farmhouse design featuring Rajasthani architectural elements with modern amenities and smart home integration.',
+    value: '₹1.2 Crores',
     year: '2024'
   },
   {
     id: 3,
-    title: 'Corporate Headquarters',
+    title: 'Bangalore Tech Office',
     category: 'Commercial Design',
-    image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&h=400&fit=crop',
-    description: 'An innovative workspace designed to inspire creativity and foster collaboration.',
-    value: '$1.5M',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop',
+    description: 'A modern tech office space designed to boost productivity while incorporating elements of Indian culture and sustainability.',
+    value: '₹45 Lakhs',
     year: '2023'
   },
   {
     id: 4,
-    title: 'Luxury Hotel Suite',
-    category: 'Hospitality',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop',
-    description: 'Sophisticated hospitality design that creates unforgettable guest experiences.',
-    value: '$3.1M',
+    title: 'Chennai Villa',
+    category: 'South Indian Heritage',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop',
+    description: 'A beautiful villa design that celebrates Tamil Nadu\'s rich architectural heritage with contemporary comfort and luxury.',
+    value: '₹65 Lakhs',
     year: '2023'
   }
 ];
 
 export default function PortfolioSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
-      </div>
-
+    <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-6">
-            <span className="text-purple-300 font-semibold text-lg">Portfolio</span>
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full border border-amber-200 mb-6">
+            <span className="text-amber-700 font-semibold text-lg">Portfolio</span>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
-            Featured
-            <span className="block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            Our Recent
+            <span className="block bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
               Masterpieces
             </span>
           </h2>
-          <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
-            Discover our most prestigious projects that showcase our commitment to design excellence and innovation.
+          <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Discover our most celebrated projects across India, each telling a unique story of luxury, tradition, and modern innovation.
           </p>
         </div>
 
@@ -71,7 +65,7 @@ export default function PortfolioSection() {
           {projects.map((project, index) => (
             <Card 
               key={project.id} 
-              className="group overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 animate-fade-in hover:shadow-2xl hover:shadow-purple-500/10" 
+              className="group overflow-hidden bg-white border border-gray-200 hover:border-amber-300 transition-all duration-500 animate-fade-in hover:shadow-2xl" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
@@ -80,14 +74,14 @@ export default function PortfolioSection() {
                   alt={project.title}
                   className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                 
                 {/* Overlay content */}
                 <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                  <div className="bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <div className="bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
                     <span className="text-white text-sm font-medium">{project.year}</span>
                   </div>
-                  <div className="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-1 rounded-full">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-1 rounded-full">
                     <span className="text-white text-sm font-bold">{project.value}</span>
                   </div>
                 </div>
@@ -95,7 +89,7 @@ export default function PortfolioSection() {
                 <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   <Button 
                     size="sm" 
-                    className="w-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/20 hover:border-white/40 group/btn"
+                    className="w-full bg-white/90 backdrop-blur-sm hover:bg-white text-gray-900 border-0 group/btn"
                   >
                     <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:rotate-45 transition-transform duration-300" />
                     View Project Details
@@ -106,14 +100,14 @@ export default function PortfolioSection() {
               
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm text-purple-400 font-semibold uppercase tracking-wider">{project.category}</span>
+                  <span className="text-sm text-amber-600 font-semibold uppercase tracking-wider">{project.category}</span>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-amber-600 transition-colors duration-300">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-400 leading-relaxed text-lg font-light">
+                <p className="text-gray-600 leading-relaxed text-lg">
                   {project.description}
                 </p>
               </CardContent>
@@ -124,9 +118,9 @@ export default function PortfolioSection() {
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 hover:from-purple-700 hover:via-pink-700 hover:to-indigo-700 text-white px-12 py-6 text-xl rounded-2xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-purple-500/25"
+            className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-12 py-6 text-xl rounded-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
           >
-            Explore Full Portfolio
+            Explore Complete Portfolio
             <ArrowUpRight className="ml-3 h-6 w-6" />
           </Button>
         </div>
