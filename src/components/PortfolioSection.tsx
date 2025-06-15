@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, Eye, Award } from 'lucide-react';
 
@@ -43,7 +42,7 @@ const projects = [
 
 export default function PortfolioSection() {
   return (
-    <section className="py-40 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative overflow-hidden">
+    <section className="py-20 sm:py-32 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-[0.03]">
@@ -59,15 +58,15 @@ export default function PortfolioSection() {
         <div className="absolute top-1/2 left-10 w-16 h-16 border border-purple-500/20 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
 
-      <div className="container mx-auto px-8 relative z-10">
+      <div className="container mx-auto px-3 xs:px-5 md:px-8 relative z-10">
         {/* Enhanced header */}
-        <div className="text-center mb-32 animate-fade-in">
-          <div className="inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-amber-900/30 to-orange-900/30 rounded-full border border-amber-700/40 backdrop-blur-lg mb-12 shadow-2xl">
-            <Award className="w-6 h-6 text-amber-300" />
-            <span className="text-amber-300 font-bold text-xl tracking-wider">Award-Winning Designs</span>
+        <div className="text-center mb-16 sm:mb-32 animate-fade-in">
+          <div className="inline-flex items-center gap-2 xs:gap-4 px-6 xs:px-10 py-3 xs:py-5 bg-gradient-to-r from-amber-900/30 to-orange-900/30 rounded-full border border-amber-700/40 backdrop-blur-lg mb-6 xs:mb-12 shadow-2xl">
+            <Award className="w-5 xs:w-6 h-5 xs:h-6 text-amber-300" />
+            <span className="text-amber-300 font-bold text-base xs:text-xl tracking-wider">Award-Winning Designs</span>
           </div>
           
-          <h2 className="text-6xl lg:text-8xl font-bold mb-12 leading-tight font-playfair">
+          <h2 className="text-3xl xs:text-4xl md:text-6xl lg:text-8xl font-bold mb-5 xs:mb-12 leading-tight font-playfair">
             <span className="text-white drop-shadow-2xl">Recent</span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent drop-shadow-2xl">
@@ -75,47 +74,44 @@ export default function PortfolioSection() {
             </span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-base xs:text-lg md:text-2xl text-gray-300 max-w-lg xs:max-w-4xl mx-auto leading-relaxed font-light">
             Discover how we transform spaces with premium materials and transparent pricing. 
             Each project showcases our commitment to quality without the typical designer markups.
           </p>
         </div>
 
         {/* Enhanced image grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 xs:gap-8 md:gap-10 mb-14 xs:mb-24">
           {projects.map((project, index) => (
             <div 
               key={project.id} 
-              className="group relative overflow-hidden rounded-3xl animate-fade-in hover:scale-105 transition-all duration-700 shadow-2xl" 
+              className="group relative overflow-hidden rounded-2xl xs:rounded-3xl animate-fade-in hover:scale-102 lg:hover:scale-105 transition-all duration-700 shadow-2xl touch-manipulation" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-[4/3] relative">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  className="w-full h-full object-cover group-hover:scale-105 xs:group-hover:scale-110 transition-transform duration-1000"
+                  draggable={false}
                 />
                 
                 {/* Enhanced overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 
                 {/* Content overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="inline-block px-3 py-1 bg-amber-500/20 backdrop-blur-sm rounded-full text-amber-300 text-sm font-medium mb-3 border border-amber-500/30">
+                <div className="absolute bottom-0 left-0 right-0 p-4 xs:p-8 transform translate-y-3 xs:translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <div className="inline-block px-2 xs:px-3 py-1 bg-amber-500/20 backdrop-blur-sm rounded-full text-amber-300 text-xs xs:text-sm font-medium mb-1 xs:mb-3 border border-amber-500/30">
                     {project.category}
                   </div>
-                  <h3 className="text-white font-bold text-xl mb-3 font-playfair">{project.title}</h3>
-                  <button className="inline-flex items-center gap-2 text-amber-300 hover:text-amber-200 transition-colors font-medium">
+                  <h3 className="text-white font-bold text-lg xs:text-xl mb-2 xs:mb-3 font-playfair">{project.title}</h3>
+                  <button className="inline-flex items-center gap-1 xs:gap-2 text-amber-300 hover:text-amber-200 transition-colors font-medium text-xs xs:text-sm">
                     <Eye className="w-4 h-4" />
                     View Details
                   </button>
                 </div>
-                
-                {/* Enhanced border effect */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-amber-500/60 rounded-3xl transition-all duration-500"></div>
-                
-                {/* Sophisticated glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 via-transparent to-orange-500/0 group-hover:from-amber-500/10 group-hover:to-orange-500/10 rounded-3xl transition-all duration-700"></div>
+                <div className="absolute inset-0 border border-transparent group-hover:border-amber-500/60 rounded-2xl xs:rounded-3xl transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 via-transparent to-orange-500/0 group-hover:from-amber-500/10 group-hover:to-orange-500/10 rounded-2xl xs:rounded-3xl transition-all duration-700"></div>
               </div>
             </div>
           ))}
@@ -123,19 +119,19 @@ export default function PortfolioSection() {
 
         {/* Enhanced CTA */}
         <div className="text-center">
-          <div className="max-w-2xl mx-auto mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4 font-playfair">Ready to See More?</h3>
-            <p className="text-gray-300 text-lg leading-relaxed">
+          <div className="max-w-xl xs:max-w-2xl mx-auto mb-6 xs:mb-12">
+            <h3 className="text-2xl xs:text-3xl font-bold text-white mb-2 xs:mb-4 font-playfair">Ready to See More?</h3>
+            <p className="text-gray-300 text-base xs:text-lg leading-relaxed">
               Explore our complete portfolio and discover how we can transform your space with premium materials at honest prices.
             </p>
           </div>
           
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 hover:from-amber-700 hover:via-amber-600 hover:to-yellow-600 text-black px-20 py-10 text-2xl rounded-3xl font-bold transform hover:scale-105 transition-all duration-500 shadow-2xl shadow-amber-500/30 group"
+            className="w-full xs:w-auto max-w-xs xs:max-w-none bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 hover:from-amber-700 hover:via-amber-600 hover:to-yellow-600 text-black px-8 xs:px-20 py-5 xs:py-10 text-xl xs:text-2xl rounded-2xl xs:rounded-3xl font-bold transform hover:scale-102 xs:hover:scale-105 transition-all duration-500 shadow-2xl shadow-amber-500/30 group"
           >
             View Complete Portfolio
-            <ArrowUpRight className="ml-4 h-8 w-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+            <ArrowUpRight className="ml-3 xs:ml-4 h-7 xs:h-8 w-7 xs:w-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
           </Button>
         </div>
       </div>
