@@ -16,7 +16,7 @@ function ModernInteriorScene() {
 
   return (
     <group ref={groupRef}>
-      {/* Modern sofa - clean lines */}
+      {/* Modern sofa */}
       <Float speed={0.5} rotationIntensity={0.02} floatIntensity={0.1}>
         <group position={[-1.5, -0.5, 0]}>
           <Box args={[2.8, 0.6, 1.4]} position={[0, 0, 0]}>
@@ -25,16 +25,10 @@ function ModernInteriorScene() {
           <Box args={[2.6, 0.8, 1.2]} position={[0, 0.35, 0]}>
             <meshStandardMaterial color="#f5f5f5" roughness={0.8} metalness={0.05} />
           </Box>
-          <Box args={[0.3, 0.8, 1.2]} position={[-1.25, 0.35, 0]}>
-            <meshStandardMaterial color="#f5f5f5" roughness={0.8} metalness={0.05} />
-          </Box>
-          <Box args={[0.3, 0.8, 1.2]} position={[1.25, 0.35, 0]}>
-            <meshStandardMaterial color="#f5f5f5" roughness={0.8} metalness={0.05} />
-          </Box>
         </group>
       </Float>
 
-      {/* Modern coffee table - glass and steel */}
+      {/* Coffee table */}
       <Float speed={0.3} rotationIntensity={0.01} floatIntensity={0.05}>
         <group position={[0.5, -0.8, 1]}>
           <Box args={[1.5, 0.05, 0.8]} position={[0, 0.4, 0]}>
@@ -44,25 +38,15 @@ function ModernInteriorScene() {
               opacity={0.3} 
               roughness={0.0} 
               metalness={0.9}
-              envMapIntensity={1}
             />
           </Box>
           <Box args={[0.05, 0.8, 0.05]} position={[-0.7, 0, -0.35]}>
             <meshStandardMaterial color="#c0c0c0" roughness={0.1} metalness={0.9} />
           </Box>
-          <Box args={[0.05, 0.8, 0.05]} position={[0.7, 0, -0.35]}>
-            <meshStandardMaterial color="#c0c0c0" roughness={0.1} metalness={0.9} />
-          </Box>
-          <Box args={[0.05, 0.8, 0.05]} position={[-0.7, 0, 0.35]}>
-            <meshStandardMaterial color="#c0c0c0" roughness={0.1} metalness={0.9} />
-          </Box>
-          <Box args={[0.05, 0.8, 0.05]} position={[0.7, 0, 0.35]}>
-            <meshStandardMaterial color="#c0c0c0" roughness={0.1} metalness={0.9} />
-          </Box>
         </group>
       </Float>
 
-      {/* Modern floor lamp */}
+      {/* Floor lamp */}
       <Float speed={0.4} rotationIntensity={0.01} floatIntensity={0.08}>
         <group position={[2.5, -0.9, -0.5]}>
           <Box args={[0.05, 2.5, 0.05]} position={[0, 0.75, 0]}>
@@ -78,13 +62,10 @@ function ModernInteriorScene() {
               emissiveIntensity={0.3}
             />
           </Sphere>
-          <Box args={[0.4, 0.1, 0.4]} position={[0, -0.9, 0]}>
-            <meshStandardMaterial color="#1a1a1a" roughness={0.2} metalness={0.8} />
-          </Box>
         </group>
       </Float>
 
-      {/* Abstract art piece - floating geometric forms */}
+      {/* Abstract art */}
       <Float speed={0.6} rotationIntensity={0.05} floatIntensity={0.15}>
         <group position={[-2.5, 1, -1.5]}>
           <Box args={[0.8, 1.2, 0.08]} position={[0, 0, 0]}>
@@ -96,17 +77,10 @@ function ModernInteriorScene() {
               emissiveIntensity={0.1}
             />
           </Box>
-          <Box args={[0.6, 0.6, 0.06]} position={[0.2, 0.3, 0.1]}>
-            <meshStandardMaterial 
-              color="#8b4513" 
-              roughness={0.4} 
-              metalness={0.3}
-            />
-          </Box>
         </group>
       </Float>
 
-      {/* Modern plant pot */}
+      {/* Plant */}
       <Float speed={0.35} rotationIntensity={0.02} floatIntensity={0.06}>
         <group position={[1.8, -0.6, -1.8]}>
           <mesh>
@@ -119,24 +93,24 @@ function ModernInteriorScene() {
         </group>
       </Float>
 
-      {/* Ambient geometric elements */}
-      {[...Array(8)].map((_, i) => (
+      {/* Ambient particles */}
+      {[...Array(6)].map((_, i) => (
         <Float key={i} speed={0.2 + i * 0.05} rotationIntensity={0.02} floatIntensity={0.08}>
           <Sphere
             args={[0.03]}
             position={[
-              (Math.random() - 0.5) * 10,
-              (Math.random() - 0.5) * 4 + 1,
-              (Math.random() - 0.5) * 8 - 1
+              (Math.random() - 0.5) * 8,
+              (Math.random() - 0.5) * 3 + 1,
+              (Math.random() - 0.5) * 6
             ]}
           >
             <meshStandardMaterial 
-              color={i % 3 === 0 ? "#d4af37" : i % 3 === 1 ? "#c0c0c0" : "#ffffff"} 
+              color={i % 2 === 0 ? "#d4af37" : "#ffffff"} 
               roughness={0.2} 
               metalness={0.8}
               transparent
               opacity={0.6}
-              emissive={i % 3 === 0 ? "#d4af37" : "#ffffff"}
+              emissive={i % 2 === 0 ? "#d4af37" : "#ffffff"}
               emissiveIntensity={0.1}
             />
           </Sphere>
@@ -149,30 +123,15 @@ function ModernInteriorScene() {
 function StudioLighting() {
   return (
     <>
-      <ambientLight intensity={0.3} color="#ffffff" />
+      <ambientLight intensity={0.4} color="#ffffff" />
       <directionalLight 
         position={[5, 8, 3]} 
-        intensity={1.5} 
-        color="#ffffff"
-        castShadow
-        shadow-mapSize-width={2048}
-        shadow-mapSize-height={2048}
-        shadow-camera-far={50}
-        shadow-camera-left={-10}
-        shadow-camera-right={10}
-        shadow-camera-top={10}
-        shadow-camera-bottom={-10}
-      />
-      <pointLight position={[-3, 4, 3]} intensity={0.6} color="#ffd700" />
-      <pointLight position={[3, -2, -3]} intensity={0.4} color="#87ceeb" />
-      <spotLight
-        position={[0, 8, 0]}
-        angle={0.2}
-        penumbra={0.5}
-        intensity={1}
+        intensity={1.2} 
         color="#ffffff"
         castShadow
       />
+      <pointLight position={[-3, 4, 3]} intensity={0.5} color="#ffd700" />
+      <pointLight position={[3, -2, -3]} intensity={0.3} color="#87ceeb" />
     </>
   );
 }
@@ -200,7 +159,6 @@ export default function Scene3D() {
           maxPolarAngle={Math.PI / 2.2}
           minPolarAngle={Math.PI / 6}
           target={[0, 0, 0]}
-          dampingFactor={0.05}
           enableDamping={true}
         />
       </Canvas>
