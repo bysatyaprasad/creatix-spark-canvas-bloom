@@ -1,127 +1,96 @@
 
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
     id: 1,
-    title: 'Mumbai Penthouse',
-    category: 'Luxury Residential',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop',
-    description: 'A stunning 4-BHK penthouse combining traditional Indian elements with contemporary luxury in the heart of Mumbai.',
-    value: '₹85 Lakhs',
-    year: '2024'
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center'
   },
   {
     id: 2,
-    title: 'Delhi Farmhouse',
-    category: 'Traditional Modern',
-    image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600&h=400&fit=crop',
-    description: 'An elegant farmhouse design featuring Rajasthani architectural elements with modern amenities and smart home integration.',
-    value: '₹1.2 Crores',
-    year: '2024'
+    image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&h=600&fit=crop&crop=center'
   },
   {
     id: 3,
-    title: 'Bangalore Tech Office',
-    category: 'Commercial Design',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop',
-    description: 'A modern tech office space designed to boost productivity while incorporating elements of Indian culture and sustainability.',
-    value: '₹45 Lakhs',
-    year: '2023'
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&crop=center'
   },
   {
     id: 4,
-    title: 'Chennai Villa',
-    category: 'South Indian Heritage',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop',
-    description: 'A beautiful villa design that celebrates Tamil Nadu\'s rich architectural heritage with contemporary comfort and luxury.',
-    value: '₹65 Lakhs',
-    year: '2023'
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&crop=center'
+  },
+  {
+    id: 5,
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center'
+  },
+  {
+    id: 6,
+    image: 'https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=800&h=600&fit=crop&crop=center'
   }
 ];
 
 export default function PortfolioSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full border border-amber-200 mb-6">
-            <span className="text-amber-700 font-semibold text-lg">Portfolio</span>
+    <section className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+      {/* Premium background elements */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 3px 3px, #d4af37 1px, transparent 0)`,
+          backgroundSize: '80px 80px'
+        }}></div>
+      </div>
+
+      <div className="container mx-auto px-8 relative z-10">
+        {/* Premium header */}
+        <div className="text-center mb-24 animate-fade-in">
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-900/20 to-orange-900/20 rounded-full border border-amber-700/30 backdrop-blur-sm mb-8">
+            <span className="text-amber-300 font-bold text-xl tracking-wide">Our Masterpieces</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Our Recent
-            <span className="block bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-              Masterpieces
+          <h2 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+            <span className="text-white">Recent</span>
+            <br />
+            <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent">
+              Creations
             </span>
           </h2>
-          <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Discover our most celebrated projects across India, each telling a unique story of luxury, tradition, and modern innovation.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Premium image grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {projects.map((project, index) => (
-            <Card 
+            <div 
               key={project.id} 
-              className="group overflow-hidden bg-white border border-gray-200 hover:border-amber-300 transition-all duration-500 animate-fade-in hover:shadow-2xl" 
+              className="group relative overflow-hidden rounded-2xl animate-fade-in hover:scale-105 transition-all duration-700" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative overflow-hidden">
+              <div className="aspect-[4/3] relative">
                 <img 
                   src={project.image} 
-                  alt={project.title}
-                  className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
+                  alt="Luxury Interior Design"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                 
-                {/* Overlay content */}
-                <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                  <div className="bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
-                    <span className="text-white text-sm font-medium">{project.year}</span>
-                  </div>
-                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-1 rounded-full">
-                    <span className="text-white text-sm font-bold">{project.value}</span>
-                  </div>
-                </div>
+                {/* Premium overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <Button 
-                    size="sm" 
-                    className="w-full bg-white/90 backdrop-blur-sm hover:bg-white text-gray-900 border-0 group/btn"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:rotate-45 transition-transform duration-300" />
-                    View Project Details
-                    <ArrowUpRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
-                  </Button>
-                </div>
+                {/* Elegant border effect */}
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-amber-500/50 rounded-2xl transition-all duration-500"></div>
+                
+                {/* Subtle glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 via-transparent to-orange-500/0 group-hover:from-amber-500/10 group-hover:to-orange-500/10 rounded-2xl transition-all duration-700"></div>
               </div>
-              
-              <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm text-amber-600 font-semibold uppercase tracking-wider">{project.category}</span>
-                </div>
-                
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-amber-600 transition-colors duration-300">
-                  {project.title}
-                </h3>
-                
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  {project.description}
-                </p>
-              </CardContent>
-            </Card>
+            </div>
           ))}
         </div>
 
+        {/* Premium CTA */}
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-12 py-6 text-xl rounded-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
+            className="bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 hover:from-amber-700 hover:via-amber-600 hover:to-yellow-600 text-black px-16 py-8 text-2xl rounded-2xl font-bold transform hover:scale-105 transition-all duration-500 shadow-2xl shadow-amber-500/25"
           >
-            Explore Complete Portfolio
-            <ArrowUpRight className="ml-3 h-6 w-6" />
+            View Complete Portfolio
+            <ArrowUpRight className="ml-4 h-7 w-7" />
           </Button>
         </div>
       </div>
