@@ -42,20 +42,20 @@ export default function HeroSection() {
 
           {/* Enhanced headline */}
           <h1 className="font-playfair text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] mb-10 animate-fade-in">
-            <span className="block text-white/95 drop-shadow-2xl">Premium Materials.</span>
+            <span className="block text-white/95 drop-shadow-2xl">Transform Your Home.</span>
             <span className="block bg-gradient-to-r from-amber-300 via-yellow-200 to-orange-300 bg-clip-text text-transparent animate-pulse-glow drop-shadow-2xl">
-              Fair Prices.
+              Transparent Process.
             </span>
             <span className="block text-4xl md:text-5xl lg:text-6xl text-white/80 font-light mt-6 drop-shadow-xl">
-              No Hidden Markups.
+              Exceptional Results.
             </span>
           </h1>
           
           {/* Enhanced description */}
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-100 mb-16 font-light max-w-5xl mx-auto leading-relaxed animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-            While others sell you ordinary materials at premium prices, we believe in transparency. 
-            Get access to <span className="text-amber-300 font-semibold bg-amber-900/20 px-3 py-1 rounded-lg">high-quality materials</span> through our 
-            trusted supplier network—no inflated markups, no compromises on quality.
+            Experience complete interior transformation with our end-to-end design and build services. 
+            From concept to completion, we deliver <span className="text-amber-300 font-semibold bg-amber-900/20 px-3 py-1 rounded-lg">stunning interiors</span> with 
+            full transparency in pricing, process, and timeline—no surprises, just results.
           </p>
 
           {/* Enhanced value proposition cards */}
@@ -64,24 +64,24 @@ export default function HeroSection() {
               <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-green-500 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                 <Shield className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Premium Quality Only</h3>
-              <p className="text-white/90 leading-relaxed text-lg">Every material meets our strict quality standards. No compromises, no shortcuts.</p>
+              <h3 className="text-2xl font-bold mb-4 text-white">End-to-End Service</h3>
+              <p className="text-white/90 leading-relaxed text-lg">Complete design and execution from concept to final installation. One team, seamless process.</p>
             </div>
 
             <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-4 hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.4s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                 <TrendingDown className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Honest Pricing</h3>
-              <p className="text-white/90 leading-relaxed text-lg">Fair margins, transparent costs. See exactly what you're paying for.</p>
+              <h3 className="text-2xl font-bold mb-4 text-white">Transparent Pricing</h3>
+              <p className="text-white/90 leading-relaxed text-lg">Clear breakdowns of costs, timelines, and processes. Know exactly what you're investing in.</p>
             </div>
 
             <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-4 hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.5s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                 <Sparkles className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Complete Transparency</h3>
-              <p className="text-white/90 leading-relaxed text-lg">Know exactly where your money goes. No hidden fees or surprise charges.</p>
+              <h3 className="text-2xl font-bold mb-4 text-white">Quality Guaranteed</h3>
+              <p className="text-white/90 leading-relaxed text-lg">Premium materials and expert craftsmanship with comprehensive warranties on all work.</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export default function HeroSection() {
             {/* Enhanced testimonial */}
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl mx-auto border border-white/20 shadow-2xl">
               <p className="text-lg text-white/90 mb-6 italic leading-relaxed">
-                "Finally, someone who doesn't overcharge for quality materials. The transparency is refreshing!"
+                "Finally, a design service that delivers exactly what they promise. The transparency throughout was refreshing!"
               </p>
               
               <div className="flex items-center justify-center gap-6 text-sm text-white/70">
