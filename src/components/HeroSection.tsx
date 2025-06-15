@@ -1,7 +1,6 @@
 
-import { ArrowRight, Award, Users, Star, Sparkles } from 'lucide-react';
+import { ArrowRight, Users, Star, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Scene3D from './Scene3D';
 
 export default function HeroSection() {
   return (
@@ -101,15 +100,19 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Premium 3D Showcase */}
+          {/* Premium Image Showcase */}
           <div className="h-[800px] relative animate-slide-in-right">
             {/* Sophisticated background elements */}
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-orange-500/3 to-yellow-500/5 rounded-3xl blur-3xl"></div>
             <div className="absolute -inset-2 bg-gradient-to-r from-amber-600/20 via-transparent to-orange-600/20 rounded-3xl blur-xl"></div>
             
-            {/* Main 3D container */}
+            {/* Main Image container */}
             <div className="relative z-10 h-full rounded-3xl overflow-hidden border border-amber-700/20 bg-gradient-to-b from-gray-900/40 via-gray-800/30 to-gray-900/40 backdrop-blur-xl shadow-2xl">
-              <Scene3D />
+              <img
+                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?q=80&w=1974&auto=format&fit=crop"
+                alt="Luxurious modern living room"
+                className="w-full h-full object-cover"
+              />
               
               {/* Premium overlay gradients */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none"></div>
