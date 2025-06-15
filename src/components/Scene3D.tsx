@@ -1,6 +1,6 @@
 
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Float, Text, Box, Sphere, Torus } from '@react-three/drei';
+import { OrbitControls, Float } from '@react-three/drei';
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
@@ -31,34 +31,39 @@ function FloatingElements() {
     <group ref={meshRef}>
       {/* Floating geometric shapes representing design elements */}
       <Float speed={1.5} rotationIntensity={1} floatIntensity={2}>
-        <Box ref={boxRef} position={[-3, 2, 0]} args={[1, 1, 1]}>
+        <mesh ref={boxRef} position={[-3, 2, 0]}>
+          <boxGeometry args={[1, 1, 1]} />
           <meshStandardMaterial color="#8B5CF6" />
-        </Box>
+        </mesh>
       </Float>
       
       <Float speed={2} rotationIntensity={1} floatIntensity={1.5}>
-        <Sphere ref={sphereRef} position={[3, -1, 1]} args={[0.8]}>
+        <mesh ref={sphereRef} position={[3, -1, 1]}>
+          <sphereGeometry args={[0.8]} />
           <meshStandardMaterial color="#06B6D4" />
-        </Sphere>
+        </mesh>
       </Float>
       
       <Float speed={1.8} rotationIntensity={1.5} floatIntensity={1}>
-        <Torus ref={torusRef} position={[0, -2, -1]} args={[1, 0.3, 16, 32]}>
+        <mesh ref={torusRef} position={[0, -2, -1]}>
+          <torusGeometry args={[1, 0.3, 16, 32]} />
           <meshStandardMaterial color="#F59E0B" />
-        </Torus>
+        </mesh>
       </Float>
       
       {/* Wireframe elements for modern tech feel */}
       <Float speed={1.2} rotationIntensity={0.5} floatIntensity={3}>
-        <Box position={[2, 3, -2]} args={[1.5, 0.1, 1.5]}>
+        <mesh position={[2, 3, -2]}>
+          <boxGeometry args={[1.5, 0.1, 1.5]} />
           <meshStandardMaterial color="#EC4899" wireframe />
-        </Box>
+        </mesh>
       </Float>
       
       <Float speed={2.5} rotationIntensity={2} floatIntensity={1}>
-        <Sphere position={[-2, -3, 2]} args={[0.6]}>
+        <mesh position={[-2, -3, 2]}>
+          <sphereGeometry args={[0.6]} />
           <meshStandardMaterial color="#10B981" wireframe />
-        </Sphere>
+        </mesh>
       </Float>
     </group>
   );
