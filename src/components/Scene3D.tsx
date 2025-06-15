@@ -1,7 +1,7 @@
 
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Environment, Float, useTexture, Sphere, Box } from '@react-three/drei';
-import { useRef, useMemo } from 'react';
+import { OrbitControls, Environment, Float, Sphere, Box } from '@react-three/drei';
+import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
@@ -184,9 +184,7 @@ export default function Scene3D() {
         camera={{ position: [0, 2, 6], fov: 45 }}
         gl={{ 
           antialias: true, 
-          alpha: true,
-          shadowMap: true,
-          shadowMapType: THREE.PCFSoftShadowMap
+          alpha: true
         }}
         style={{ background: 'transparent' }}
         shadows
