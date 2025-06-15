@@ -1,5 +1,4 @@
-
-import { Home, Palette, Lightbulb, Sofa, Building, Layout, Shield, DollarSign, Award, Star, Users, Clock } from 'lucide-react';
+import { Home, Palette, Lightbulb, Sofa, Building, Layout, Shield, DollarSign, Award, Star, Users, Clock, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -107,7 +106,7 @@ export default function ServicesSection() {
           <h2 className="font-playfair text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
             <span className="block text-gray-800">Why Pay</span>
             <span className="block bg-gradient-to-r from-red-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">
-              200-300% More
+              200-300%
             </span>
             <span className="block text-gray-800">for the Same Quality?</span>
           </h2>
