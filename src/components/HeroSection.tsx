@@ -41,7 +41,7 @@ export default function HeroSection() {
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
                   <span className="text-white font-bold text-xl">₹</span>
                 </div>
-                <p className="text-center font-medium">Factory-Direct Pricing</p>
+                <p className="text-center font-medium">Competitive Pricing</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-3">
@@ -64,7 +64,7 @@ export default function HeroSection() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white/40 text-white hover:bg-white/10 hover:border-white px-12 py-8 text-xl rounded-2xl font-bold backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-white text-white hover:bg-white hover:text-black px-12 py-8 text-xl rounded-2xl font-bold backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
             >
               See Our Materials
             </Button>
