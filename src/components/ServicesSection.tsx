@@ -1,114 +1,128 @@
 
 import { Home, Palette, Lightbulb, Sofa, Building, Layout } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
 
 const services = [
   {
     icon: Home,
     title: 'Luxury Residential Design',
     description: 'Complete home transformations that blend sophisticated aesthetics with unparalleled comfort, creating spaces that define luxury living.',
-    gradient: 'from-amber-500/20 to-orange-500/20',
-    iconColor: 'from-amber-400 to-orange-500'
+    color: 'from-amber-400 to-orange-500',
+    bgGradient: 'from-amber-50 to-orange-50'
   },
   {
     icon: Building,
     title: 'Premium Commercial Spaces',
     description: 'Sophisticated office environments and retail spaces that embody professionalism while inspiring creativity and productivity.',
-    gradient: 'from-orange-500/20 to-red-500/20',
-    iconColor: 'from-orange-400 to-red-500'
+    color: 'from-blue-400 to-indigo-500',
+    bgGradient: 'from-blue-50 to-indigo-50'
   },
   {
     icon: Layout,
     title: 'Space Planning Excellence',
     description: 'Masterful space optimization that maximizes functionality while maintaining aesthetic integrity and flow.',
-    gradient: 'from-red-500/20 to-pink-500/20',
-    iconColor: 'from-red-400 to-pink-500'
+    color: 'from-emerald-400 to-teal-500',
+    bgGradient: 'from-emerald-50 to-teal-50'
   },
   {
     icon: Palette,
     title: 'Color Mastery',
     description: 'Expert color curation that creates harmonious palettes, setting the perfect mood and atmosphere for every space.',
-    gradient: 'from-yellow-500/20 to-amber-500/20',
-    iconColor: 'from-yellow-400 to-amber-500'
+    color: 'from-purple-400 to-pink-500',
+    bgGradient: 'from-purple-50 to-pink-50'
   },
   {
     icon: Lightbulb,
     title: 'Lighting Artistry',
     description: 'Strategic lighting design that transforms spaces through carefully orchestrated illumination and ambiance.',
-    gradient: 'from-green-500/20 to-emerald-500/20',
-    iconColor: 'from-green-400 to-emerald-500'
+    color: 'from-yellow-400 to-amber-500',
+    bgGradient: 'from-yellow-50 to-amber-50'
   },
   {
     icon: Sofa,
     title: 'Bespoke Furniture',
     description: 'Custom furniture pieces crafted by master artisans, designed to complement and elevate your unique interior vision.',
-    gradient: 'from-blue-500/20 to-indigo-500/20',
-    iconColor: 'from-blue-400 to-indigo-500'
+    color: 'from-rose-400 to-red-500',
+    bgGradient: 'from-rose-50 to-red-50'
   }
 ];
 
 export default function ServicesSection() {
   return (
-    <section className="py-32 bg-gradient-to-b from-gray-900 via-black to-gray-900 relative overflow-hidden">
-      {/* Premium background pattern */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #d4af37 1px, transparent 0)`,
-          backgroundSize: '60px 60px'
-        }}></div>
+    <section className="py-24 bg-white relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-amber-200/20 to-orange-200/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-8 relative z-10">
-        {/* Premium header */}
-        <div className="text-center mb-24 animate-fade-in">
-          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-900/20 to-orange-900/20 rounded-full border border-amber-700/30 backdrop-blur-sm mb-8">
-            <span className="text-amber-300 font-bold text-xl tracking-wide">Our Expertise</span>
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Section Header */}
+        <div className="text-center mb-20 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600 mb-6">
+            <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
+            Our Expertise
           </div>
-          <h2 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-            <span className="text-white">Comprehensive</span>
-            <br />
-            <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent">
+          
+          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Comprehensive
+            <span className="block bg-gradient-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent">
               Design Services
             </span>
           </h2>
-          <p className="text-2xl lg:text-3xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light">
+          
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             From conceptual vision to flawless execution, we deliver end-to-end interior design services 
             that transform spaces into extraordinary experiences.
           </p>
         </div>
 
-        {/* Premium services grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="group hover:shadow-2xl transition-all duration-700 hover:-translate-y-4 border-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl animate-fade-in overflow-hidden relative" 
+            <div 
+              key={index}
+              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Premium card background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700`}></div>
+              {/* Background gradient on hover */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${service.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`}></div>
               
-              <CardContent className="p-10 text-center relative z-10">
-                {/* Premium icon */}
-                <div className={`w-24 h-24 mx-auto mb-8 rounded-3xl bg-gradient-to-br ${service.iconColor} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-700 shadow-2xl`}>
-                  <service.icon className="h-12 w-12 text-white" />
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  <service.icon className="h-8 w-8 text-white" />
                 </div>
                 
-                {/* Premium title */}
-                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-amber-300 transition-colors duration-500">
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 mb-4 font-playfair group-hover:text-gray-800 transition-colors">
                   {service.title}
                 </h3>
                 
-                {/* Premium description */}
-                <p className="text-gray-300 leading-relaxed text-lg font-light">
+                {/* Description */}
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
                   {service.description}
                 </p>
-              </CardContent>
-              
-              {/* Premium border effect */}
-              <div className="absolute inset-0 border border-transparent group-hover:border-amber-500/30 rounded-xl transition-all duration-700"></div>
-            </Card>
+              </div>
+
+              {/* Decorative corner accent */}
+              <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-bl-3xl rounded-tr-2xl`}></div>
+            </div>
           ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16 animate-fade-in">
+          <p className="text-gray-600 mb-6 text-lg">
+            Ready to transform your space with our expertise?
+          </p>
+          <button className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-orange-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-amber-700 hover:to-orange-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            Get Started Today
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
