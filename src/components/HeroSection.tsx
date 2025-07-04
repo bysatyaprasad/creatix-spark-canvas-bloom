@@ -41,7 +41,7 @@ export default function HeroSection() {
 
           {/* Enhanced headline */}
           <h1 className="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-[1] mb-6 sm:mb-10 animate-fade-in">
-            <span className="block text-white/95 drop-shadow-2xl">Transform Your Home.</span>
+            <span className="block text-white/95 drop-shadow-2xl">Transform Your Space.</span>
             <span className="block bg-gradient-to-r from-amber-300 via-yellow-200 to-orange-300 bg-clip-text text-transparent animate-pulse-glow drop-shadow-2xl text-2xl xs:text-3xl sm:text-5xl md:text-7xl">
               Transparent Process.
             </span>

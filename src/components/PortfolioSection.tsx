@@ -67,16 +67,16 @@ export default function PortfolioSection() {
           </div>
           
           <h2 className="text-3xl xs:text-4xl md:text-6xl lg:text-8xl font-bold mb-5 xs:mb-12 leading-tight font-playfair">
-            <span className="text-white drop-shadow-2xl">Recent</span>
+            <span className="text-white drop-shadow-2xl">Design</span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent drop-shadow-2xl">
-              Masterpieces
+              Inspiration
             </span>
           </h2>
           
           <p className="text-base xs:text-lg md:text-2xl text-gray-300 max-w-lg xs:max-w-4xl mx-auto leading-relaxed font-light">
-            Discover how we transform spaces with premium materials and transparent pricing. 
-            Each project showcases our commitment to quality without the typical designer markups.
+            Get inspired by beautiful interior design possibilities. These showcase the potential 
+            of thoughtful design with premium materials and transparent execution.
           </p>
         </div>
 
@@ -95,21 +95,6 @@ export default function PortfolioSection() {
                   className="w-full h-full object-cover group-hover:scale-105 xs:group-hover:scale-110 transition-transform duration-1000"
                   draggable={false}
                 />
-                
-                {/* Enhanced overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                
-                {/* Content overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 xs:p-8 transform translate-y-3 xs:translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="inline-block px-2 xs:px-3 py-1 bg-amber-500/20 backdrop-blur-sm rounded-full text-amber-300 text-xs xs:text-sm font-medium mb-1 xs:mb-3 border border-amber-500/30">
-                    {project.category}
-                  </div>
-                  <h3 className="text-white font-bold text-lg xs:text-xl mb-2 xs:mb-3 font-playfair">{project.title}</h3>
-                  <button className="inline-flex items-center gap-1 xs:gap-2 text-amber-300 hover:text-amber-200 transition-colors font-medium text-xs xs:text-sm">
-                    <Eye className="w-4 h-4" />
-                    View Details
-                  </button>
-                </div>
                 <div className="absolute inset-0 border border-transparent group-hover:border-amber-500/60 rounded-2xl xs:rounded-3xl transition-all duration-500"></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 via-transparent to-orange-500/0 group-hover:from-amber-500/10 group-hover:to-orange-500/10 rounded-2xl xs:rounded-3xl transition-all duration-700"></div>
               </div>

@@ -62,19 +62,19 @@ export default function CTASection() {
           </div>
           
           {/* Enhanced CTA buttons */}
-          <div className="flex flex-col xs:flex-row gap-4 xs:gap-8 justify-center mb-12 xs:mb-20">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center mb-12 xs:mb-20">
             <Button 
               size="lg" 
-              className="w-full xs:w-auto max-w-xs xs:max-w-none bg-white text-amber-900 hover:bg-gray-100 px-8 xs:px-20 py-5 xs:py-10 text-lg xs:text-2xl rounded-2xl xs:rounded-3xl group font-bold shadow-2xl transform hover:scale-105 transition-all duration-500"
+              className="w-full sm:w-auto max-w-xs sm:max-w-none bg-white text-amber-900 hover:bg-gray-100 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl group font-bold shadow-2xl transform hover:scale-105 transition-all duration-500"
             >
               Schedule Free Consultation
-              <ArrowRight className="ml-3 xs:ml-4 h-7 xs:h-8 w-7 xs:w-8 group-hover:translate-x-2 transition-transform duration-500" />
+              <ArrowRight className="ml-3 sm:ml-4 h-7 sm:h-8 w-7 sm:w-8 group-hover:translate-x-2 transition-transform duration-500" />
             </Button>
             
             <Button 
               size="lg" 
               variant="outline" 
-              className="w-full xs:w-auto max-w-xs xs:max-w-none border-2 xs:border-3 border-white/40 text-white hover:bg-white/15 hover:border-white/60 px-8 xs:px-20 py-5 xs:py-10 text-lg xs:text-2xl rounded-2xl xs:rounded-3xl font-bold backdrop-blur-lg transform hover:scale-105 transition-all duration-500 shadow-2xl"
+              className="w-full sm:w-auto max-w-xs sm:max-w-none border-2 sm:border-3 border-white text-white bg-transparent hover:bg-white/15 hover:border-white/80 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl font-bold backdrop-blur-lg transform hover:scale-105 transition-all duration-500 shadow-2xl"
             >
               View Our Services
             </Button>
