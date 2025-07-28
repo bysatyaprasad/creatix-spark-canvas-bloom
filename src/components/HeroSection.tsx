@@ -31,7 +31,7 @@ export default function HeroSection() {
           {/* Enhanced trust badge */}
           <div className="inline-flex flex-col xs:flex-row items-center gap-2 xs:gap-4 px-6 xs:px-8 py-3 sm:py-4 bg-white/15 backdrop-blur-lg rounded-full border border-white/30 mb-6 sm:mb-10 animate-fade-in shadow-2xl hover:bg-white/20 transition-all duration-500 w-full max-w-fit mx-auto">
             <Sparkles className="w-6 h-6 text-amber-400 animate-pulse" />
-            <span className="text-base font-semibold tracking-wide whitespace-nowrap">Trusted by 500+ Happy Homeowners</span>
+            <span className="text-base font-semibold tracking-wide whitespace-nowrap">Trusted by 500+ Happy Clients</span>
             <div className="flex -space-x-2 xs:-space-x-3 mt-2 xs:mt-0">
               <div className="w-7 h-7 xs:w-8 xs:h-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full border-4 border-white shadow-lg"></div>
               <div className="w-7 h-7 xs:w-8 xs:h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -52,7 +52,7 @@ export default function HeroSection() {
           
           {/* Enhanced description */}
           <p className="text-base xs:text-lg md:text-2xl lg:text-3xl text-gray-100 mb-10 sm:mb-16 font-light max-w-2xl sm:max-w-5xl mx-auto leading-relaxed animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-            Experience complete interior transformation with our end-to-end design and build services. 
+            Experience complete interior transformation with our end-to-end design and build services for homes, offices, and commercial spaces. 
             From concept to completion, we deliver <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg">stunning interiors</span> with 
             full transparency in pricing, process, and timeline—no surprises, just results.
           </p>
