@@ -202,75 +202,320 @@ export default function VisakhapatnamInteriors() {
         <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-40 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
       </section>
 
-      {/* Additional SEO Content Section */}
-      <section className="py-24 px-4 bg-white">
+      {/* Comprehensive Services Section */}
+      <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Complete Interior Design Services in Visakhapatnam
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              From concept to completion, we handle every aspect of interior design for coastal homes, IT offices, retail spaces, and commercial establishments across Visakhapatnam and surrounding areas.
+            </p>
+          </div>
+
+          {/* Service Categories Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-20">
+            {/* Residential Services */}
+            <div className="group relative overflow-hidden rounded-3xl bg-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
+              <div 
+                className="h-64 bg-cover bg-center relative"
+                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop')` }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-6 left-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Coastal Residential Design</h3>
+                  <p className="text-gray-200">Homes designed for Visakhapatnam's coastal lifestyle</p>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                  Transform your Visakhapatnam home with our coastal-friendly interior design services. We specialize in humidity-resistant materials and designs that maximize natural light and sea breezes.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Coastal Kitchen Design</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Beachfront Living Rooms</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Humidity-Resistant Bedrooms</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Sea-View Balconies</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Tropical Bathrooms</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Coastal Storage Solutions</span>
+                  </div>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-2xl">
+                  <p className="text-blue-800 font-semibold">Starting from ₹1,80,000 for 2BHK coastal apartments</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Commercial Services */}
+            <div className="group relative overflow-hidden rounded-3xl bg-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
+              <div 
+                className="h-64 bg-cover bg-center relative"
+                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1200&auto=format&fit=crop')` }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-6 left-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">IT & Commercial Spaces</h3>
+                  <p className="text-gray-200">Modern offices for Visakhapatnam's tech sector</p>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                  Elevate your business presence with professional commercial interior design in Visakhapatnam. Perfect for IT companies, startups, and corporate offices in the city's business districts.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">IT Office Design</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Corporate Meeting Rooms</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Reception Areas</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Retail Showrooms</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Restaurant Interiors</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">Hospitality Design</span>
+                  </div>
+                </div>
+                <div className="bg-green-50 p-4 rounded-2xl">
+                  <p className="text-green-800 font-semibold">Starting from ₹450/sq ft for commercial spaces</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Specialized Services */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Modular Kitchen Design",
+                description: "Coastal-friendly kitchens with premium materials and smart storage solutions. Designed to withstand humidity and salt air.",
+                icon: <Home className="w-8 h-8" />,
+                price: "₹2.5L - ₹6L"
+              },
+              {
+                title: "Office Interior Design",
+                description: "Professional workspace design for Visakhapatnam's growing IT and business sector. Modern, efficient, impressive.",
+                icon: <Building2 className="w-8 h-8" />,
+                price: "₹350 - ₹800/sq ft"
+              },
+              {
+                title: "Retail & Hospitality",
+                description: "Create memorable customer experiences with thoughtfully designed retail spaces and hospitality venues.",
+                icon: <Store className="w-8 h-8" />,
+                price: "₹400 - ₹1000/sq ft"
+              }
+            ].map((service, index) => (
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 text-white">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">{service.title}</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
+                <div className="bg-blue-50 p-3 rounded-xl">
+                  <span className="text-blue-700 font-semibold text-sm">{service.price}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-24 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Why Choose Creatix Interiors for Your Visakhapatnam Project?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              We understand Visakhapatnam's unique coastal environment and modern business needs. Premium quality without inflated prices.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-                Why Visakhapatnam Chooses Our Interior Design Services
-              </h2>
+              <h3 className="text-3xl font-bold mb-8 text-gray-900">Coastal Expertise Meets Modern Design</h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <MapPin className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Local Climate Understanding</h4>
+                    <p className="text-gray-600">6+ years designing for Visakhapatnam's coastal climate. Humidity-resistant materials and salt-air friendly finishes.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Users className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">IT Sector Experience</h4>
+                    <p className="text-gray-600">Designed 50+ offices for Visakhapatnam's tech companies. Modern, efficient workspaces that boost productivity.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Award className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Premium Material Network</h4>
+                    <p className="text-gray-600">Direct access to coastal-grade materials. Save 40-60% on premium finishes without compromising quality.</p>
+                  </div>
+                </div>
+              </div>
               
-              <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
-                <p>
-                  As <strong>Visakhapatnam's premier interior design company</strong>, we understand the unique characteristics of this vibrant coastal city. Known as the "Jewel of the East Coast," Visakhapatnam combines industrial growth with natural beauty, creating unique interior design opportunities and challenges.
-                </p>
-                
-                <p>
-                  Our <strong>interior designers in Visakhapatnam</strong> specialize in coastal-friendly designs that withstand humidity while maximizing the city's abundant natural light and sea breeze. Whether you're in the bustling IT corridor, the prestigious Beach Road area, or the developing suburbs, we create interiors that suit your lifestyle.
-                </p>
-                
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Coastal Interior Design Expertise in Visakhapatnam</h3>
-                
-                <p>
-                  Visakhapatnam's coastal climate requires special consideration for interior design. Our designs incorporate excellent ventilation, humidity-resistant materials, and finishes that withstand salt air. We source premium materials from local suppliers and import specialized coastal-friendly products when needed.
-                </p>
-                
-                <p>
-                  <strong>Popular interior design styles in Visakhapatnam include:</strong>
-                </p>
-                
-                <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Coastal Contemporary:</strong> Light colors, natural textures, and seamless indoor-outdoor flow</li>
-                  <li><strong>Modern Corporate:</strong> Sleek designs for IT offices and business centers</li>
-                  <li><strong>Tropical Minimalist:</strong> Clean lines with tropical accents and natural materials</li>
-                  <li><strong>Luxury Coastal:</strong> High-end finishes that complement beachfront living</li>
-                </ul>
+              <div className="bg-green-50 p-6 rounded-2xl mt-8">
+                <div className="text-3xl font-bold text-green-600 mb-2">412+ Projects</div>
+                <p className="text-green-700">completed across Visakhapatnam with 4.9/5 rating</p>
               </div>
             </div>
             
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">
-                Complete Interior Design Process in Visakhapatnam
-              </h3>
-              
-              <div className="space-y-6">
-                <div className="bg-gray-50 rounded-2xl p-6">
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900">1. Free Consultation & Site Visit</h4>
-                  <p className="text-gray-700">Our design team visits your Visakhapatnam location to understand your space, coastal requirements, and budget. We provide initial design concepts and detailed quotations.</p>
-                </div>
-                
-                <div className="bg-gray-50 rounded-2xl p-6">
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900">2. Climate-Conscious Design Planning</h4>
-                  <p className="text-gray-700">Using advanced software, we create detailed 3D visualizations that consider Visakhapatnam's coastal climate, ensuring your interior design is both beautiful and practical.</p>
-                </div>
-                
-                <div className="bg-gray-50 rounded-2xl p-6">
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900">3. Coastal-Friendly Material Selection</h4>
-                  <p className="text-gray-700">We help you choose materials that withstand humidity and salt air. Our network includes both local Visakhapatnam suppliers and specialized coastal interior brands.</p>
-                </div>
-                
-                <div className="bg-gray-50 rounded-2xl p-6">
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900">4. Professional Execution</h4>
-                  <p className="text-gray-700">Our experienced craftsmen and project managers ensure smooth execution of your Visakhapatnam interior design project with minimal disruption to your routine.</p>
-                </div>
-                
-                <div className="bg-gray-50 rounded-2xl p-6">
-                  <h4 className="text-xl font-semibold mb-3 text-gray-900">5. Coastal Warranty & Support</h4>
-                  <p className="text-gray-700">We provide comprehensive warranty designed for coastal conditions and dedicated after-sales support from our local Visakhapatnam team.</p>
-                </div>
+            <div 
+              className="relative h-96 bg-cover bg-center rounded-3xl shadow-2xl"
+              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop')` }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <div className="text-2xl font-bold mb-2">Coastal Design Experts</div>
+                <div className="text-gray-200">Visakhapatnam's trusted interior designers</div>
               </div>
             </div>
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Coastal Climate Expertise",
+                description: "Specialized knowledge of Visakhapatnam's humid coastal environment. Materials and designs that last.",
+                icon: <Shield className="w-8 h-8" />
+              },
+              {
+                title: "IT Sector Solutions",
+                description: "Modern office designs for tech companies. Collaborative spaces that enhance productivity and company culture.",
+                icon: <Building2 className="w-8 h-8" />
+              },
+              {
+                title: "Transparent Pricing", 
+                description: "See exactly what premium materials cost. No hidden fees, no inflated prices - just honest value.",
+                icon: <TrendingDown className="w-8 h-8" />
+              },
+              {
+                title: "Quality Assurance",
+                description: "5-year comprehensive warranty on all work. Premium coastal-grade materials with lasting durability.",
+                icon: <CheckCircle className="w-8 h-8" />
+              },
+              {
+                title: "Local Presence",
+                description: "Dedicated Visakhapatnam team for prompt service and support. Understanding of local preferences and needs.",
+                icon: <MapPin className="w-8 h-8" />
+              },
+              {
+                title: "Proven Track Record",
+                description: "412+ successful projects across residential, commercial, and hospitality sectors in Visakhapatnam.",
+                icon: <Award className="w-8 h-8" />
+              }
+            ].map((feature, index) => (
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 text-white">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-24 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Our Coastal Design Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              From coastal consultation to final installation - here's how we transform your Visakhapatnam space
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: "Step 1",
+                title: "Coastal Site Analysis",
+                description: "Visit your Visakhapatnam location to assess coastal factors, natural light, ventilation needs, and space requirements.",
+                icon: <MapPin className="w-8 h-8" />
+              },
+              {
+                step: "Step 2", 
+                title: "Climate-Conscious Design",
+                description: "Create detailed 3D plans using coastal-friendly materials and layouts optimized for humidity and salt air.",
+                icon: <Home className="w-8 h-8" />
+              },
+              {
+                step: "Step 3",
+                title: "Material Selection",
+                description: "Choose premium coastal-grade materials through our supplier network. Transparent pricing with no markups.",
+                icon: <Sparkles className="w-8 h-8" />
+              },
+              {
+                step: "Step 4",
+                title: "Professional Execution", 
+                description: "Expert installation by experienced craftsmen familiar with coastal construction requirements.",
+                icon: <Award className="w-8 h-8" />
+              }
+            ].map((process, index) => (
+              <div key={index} className="relative">
+                {index < 3 && (
+                  <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 z-0"></div>
+                )}
+                <div className="relative z-10 text-center p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white">
+                    {process.icon}
+                  </div>
+                  <div className="inline-block px-4 py-2 bg-blue-500 text-white text-sm font-bold rounded-full mb-4">
+                    {process.step}
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">{process.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{process.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -520,56 +520,163 @@ export default function VizianagramInteriors() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-gray-100 to-gray-200">
+      {/* Why Choose Us Section */}
+      <section className="py-24 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              What Vizianagaram Clients Say About Us
+              Why Choose Creatix Interiors for Your Vizianagaram Home?
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Real experiences from real clients across Vizianagaram who trusted us with their dream spaces.
+              We don't just design spaces - we create dream homes with premium materials at honest prices. No hidden costs, no inflated markups.
             </p>
           </div>
 
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <h3 className="text-3xl font-bold mb-8 text-gray-900">Stop Overpaying for Premium Materials</h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white font-bold text-sm">✗</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Traditional Designers</h4>
+                    <p className="text-gray-600">Mark up materials by 200-300%. Hide true costs. Surprise bills.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Our Transparent Approach</h4>
+                    <p className="text-gray-600">Source premium materials through our network. Pass savings to you. Clear pricing breakdown.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 p-6 rounded-2xl mt-8">
+                <div className="text-3xl font-bold text-green-600 mb-2">Save 40-60%</div>
+                <p className="text-green-700">on premium materials without compromising quality</p>
+              </div>
+            </div>
+            
+            <div 
+              className="relative h-96 bg-cover bg-center rounded-3xl shadow-2xl"
+              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop')` }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <div className="text-2xl font-bold mb-2">Premium Quality</div>
+                <div className="text-gray-200">Honest Pricing</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Features Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Suresh & Lakshmi",
-                location: "Cantonment Area, Vizianagaram",
-                project: "3BHK Villa Interior",
-                review: "Absolutely stunning work! They transformed our traditional home into a perfect blend of modern comfort and cultural aesthetics. The team understood our needs perfectly and delivered beyond expectations.",
-                rating: 5
+                title: "Local Vizianagaram Expertise",
+                description: "Deep understanding of local climate, architecture, and cultural preferences. 6+ years serving Vizianagaram families.",
+                icon: <MapPin className="w-8 h-8" />
               },
               {
-                name: "Dr. Ramesh Clinic",
-                location: "Main Road, Vizianagaram", 
-                project: "Medical Clinic Interior",
-                review: "Professional, clean, and patient-friendly design. The layout optimization increased our efficiency significantly. Highly recommend for commercial spaces in Vizianagaram.",
-                rating: 5
+                title: "Premium Material Network",
+                description: "Direct relationships with 50+ premium suppliers. Access to high-end materials at wholesale prices.",
+                icon: <Award className="w-8 h-8" />
               },
               {
-                name: "Priya Restaurant",
-                location: "Fort Area, Vizianagaram",
-                project: "Restaurant Interior Design",
-                review: "The ambiance they created for our restaurant perfectly captures Vizianagaram's cultural essence while being thoroughly modern. Customer compliments have increased dramatically!",
-                rating: 5
+                title: "End-to-End Service", 
+                description: "Complete design, sourcing, and execution. One team manages everything from concept to completion.",
+                icon: <Shield className="w-8 h-8" />
+              },
+              {
+                title: "Transparent Pricing",
+                description: "See exactly what materials cost. No hidden fees, no inflated prices - just honest value.",
+                icon: <TrendingDown className="w-8 h-8" />
+              },
+              {
+                title: "Quality Guarantee",
+                description: "5-year comprehensive warranty on all work. Premium materials with lasting durability.",
+                icon: <CheckCircle className="w-8 h-8" />
+              },
+              {
+                title: "On-Time Delivery",
+                description: "287+ projects completed on schedule. Efficient project management with clear timelines.",
+                icon: <Clock className="w-8 h-8" />
               }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
+            ].map((feature, index) => (
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 text-white">
+                  {feature.icon}
                 </div>
-                <p className="text-gray-600 mb-6 italic leading-relaxed">"{testimonial.review}"</p>
-                <div className="border-t pt-4">
-                  <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.project}</p>
-                  <p className="text-sm text-blue-600">{testimonial.location}</p>
-                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Transparency Section */}
+      <section className="py-24 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+              Transparent Pricing for Vizianagaram Homes
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See exactly what premium interior design costs in Vizianagaram. No hidden fees, no surprise bills.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">What You Get vs. What You Pay</h3>
+              
+              <div className="space-y-6">
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="font-semibold">Premium Modular Kitchen</span>
+                  <span className="text-gray-600">₹2.5L - ₹4.5L</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="font-semibold">Complete Living Room Design</span>
+                  <span className="text-gray-600">₹1.8L - ₹3.2L</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="font-semibold">Master Bedroom Interior</span>
+                  <span className="text-gray-600">₹1.5L - ₹2.8L</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="font-semibold">Full 3BHK Apartment</span>
+                  <span className="text-gray-600">₹6L - ₹12L</span>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 p-6 rounded-2xl mt-8">
+                <h4 className="text-lg font-bold text-green-700 mb-2">Price Includes:</h4>
+                <ul className="text-green-600 space-y-1">
+                  <li>• Premium materials at wholesale rates</li>
+                  <li>• Professional design & 3D visualization</li>
+                  <li>• Complete execution & installation</li>
+                  <li>• 5-year comprehensive warranty</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div 
+              className="relative h-96 bg-cover bg-center rounded-3xl shadow-2xl"
+              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop')` }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <div className="text-2xl font-bold mb-2">Free Consultation</div>
+                <div className="text-gray-200">Get detailed quote for your Vizianagaram home</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
