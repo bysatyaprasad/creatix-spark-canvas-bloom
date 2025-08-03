@@ -135,9 +135,9 @@ export default function HyderabadInteriors() {
             
             {/* Enhanced local description */}
             <p className="text-base xs:text-lg md:text-2xl lg:text-3xl text-gray-100 mb-10 sm:mb-16 font-light max-w-2xl sm:max-w-6xl mx-auto leading-relaxed animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-              Transforming Hyderabad spaces with premium interior design services for 
-              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">luxury homes, corporate offices, modern apartments, and commercial establishments</span>. 
-              Complete end-to-end design and build services with transparent pricing, quality materials, and exceptional craftsmanship throughout Telangana.
+              Expert interior designers serving Hyderabad with 
+              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">complete home transformations, luxury designs, modern apartments, and premium commercial spaces</span>. 
+              We travel to your location for consultations and project execution with our transparent process, quality guarantee, and no-hidden-costs promise.
             </p>
 
             {/* Trust indicators grid */}
@@ -146,8 +146,8 @@ export default function HyderabadInteriors() {
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-400 to-green-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                   <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Metropolitan Design Specialists</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Expertise in modern metropolitan living, contemporary lifestyle, and luxury design standards.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Metropolitan Design Experts</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Specialized in luxury metropolitan living, contemporary designs, and premium material sourcing.</p>
               </div>
               
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.4s' }}>
@@ -210,7 +210,7 @@ export default function HyderabadInteriors() {
               Complete Interior Design Services in Hyderabad
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              From concept to completion, we handle every aspect of interior design for luxury homes, corporate offices, tech spaces, and commercial establishments across Hyderabad and Telangana.
+              From concept to completion, we deliver complete interior design solutions for luxury homes, apartments, commercial spaces across Hyderabad. Our team travels to your location with transparent pricing and quality materials.
             </p>
           </div>
 
@@ -230,7 +230,7 @@ export default function HyderabadInteriors() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Transform your Hyderabad home with our luxury interior design services. We specialize in creating sophisticated spaces that reflect the city's cosmopolitan lifestyle and cultural heritage.
+                  Transform your Hyderabad home with our proven luxury design process. From 3D visualization to final installation, we ensure every detail meets your vision with our transparent workflow and quality guarantee.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3">
@@ -278,7 +278,7 @@ export default function HyderabadInteriors() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Elevate your business presence with premium commercial interior design in Hyderabad. Perfect for tech companies, multinational corporations, and startups in HITEC City and Gachibowli.
+                  Professional commercial interior design services in Hyderabad. We create functional, impressive business spaces that enhance productivity and leave lasting impressions on clients and employees.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3">
@@ -307,7 +307,7 @@ export default function HyderabadInteriors() {
                   </div>
                 </div>
                 <div className="bg-green-50 p-4 rounded-2xl">
-                  <p className="text-green-800 font-semibold">Starting from ₹550/sq ft for corporate spaces</p>
+                  <p className="text-green-800 font-semibold">Free consultation and detailed quote available - Contact us for personalized pricing</p>
                 </div>
               </div>
             </div>
@@ -320,19 +320,19 @@ export default function HyderabadInteriors() {
                 title: "Luxury Villa Design",
                 description: "Complete villa transformations in Hyderabad's premium localities like Jubilee Hills, Banjara Hills, and Kondapur.",
                 icon: <Home className="w-8 h-8" />,
-                price: "₹8L - ₹25L"
+                price: "Contact for Quote"
               },
               {
                 title: "Corporate Headquarters",
                 description: "Impressive corporate office designs for multinational companies and tech giants in HITEC City and Financial District.",
                 icon: <Building2 className="w-8 h-8" />,
-                price: "₹500 - ₹1200/sq ft"
+                price: "Contact for Quote"
               },
               {
                 title: "Premium Retail Spaces",
                 description: "High-end retail showrooms and luxury boutiques in Hyderabad's prime commercial areas and malls.",
                 icon: <Store className="w-8 h-8" />,
-                price: "₹600 - ₹1500/sq ft"
+                price: "Contact for Quote"
               }
             ].map((service, index) => (
               <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">

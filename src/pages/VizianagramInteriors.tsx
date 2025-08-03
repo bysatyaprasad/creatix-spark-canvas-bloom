@@ -135,9 +135,9 @@ export default function VizianagramInteriors() {
             
             {/* Enhanced local description */}
             <p className="text-base xs:text-lg md:text-2xl lg:text-3xl text-gray-100 mb-10 sm:mb-16 font-light max-w-2xl sm:max-w-6xl mx-auto leading-relaxed animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-              Transforming Vizianagaram spaces with premium interior design services for 
-              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">homes, offices, retail stores, and commercial spaces</span>. 
-              Complete end-to-end design and build services with transparent pricing, quality materials, and exceptional craftsmanship throughout Andhra Pradesh.
+              Expert interior designers serving Vizianagaram with 
+              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">complete home transformations, modular kitchens, living spaces, and commercial interiors</span>. 
+              We travel to your location for consultations and project execution with our transparent process, quality guarantee, and no-hidden-costs promise.
             </p>
 
             {/* Trust indicators grid */}
@@ -146,8 +146,8 @@ export default function VizianagramInteriors() {
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-400 to-green-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                   <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Vizianagaram Design Specialists</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Deep understanding of regional architecture, climate considerations, and modern living preferences.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Regional Design Experts</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Understanding regional preferences, climate considerations, and traditional-modern design fusion expertise.</p>
               </div>
               
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.4s' }}>
@@ -210,7 +210,7 @@ export default function VizianagramInteriors() {
               Complete Interior Design Services in Vizianagaram
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              From concept to completion, we handle every aspect of interior design for homes, offices, retail spaces, and commercial establishments across Vizianagaram and surrounding areas.
+              From concept to completion, we deliver complete interior design solutions for homes, apartments, commercial spaces across Vizianagaram. Our team travels to your location with transparent pricing and quality materials.
             </p>
           </div>
 
@@ -230,7 +230,7 @@ export default function VizianagramInteriors() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Transform your Vizianagaram home with our comprehensive residential interior design services. We specialize in creating beautiful, functional spaces that reflect your lifestyle and preferences.
+                  Transform your Vizianagaram home with our proven interior design process. From 3D visualization to final installation, we ensure every detail meets your vision with our transparent workflow and quality guarantee.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3">
@@ -278,7 +278,7 @@ export default function VizianagramInteriors() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Elevate your business image with professional commercial interior design in Vizianagaram. Create productive work environments that impress clients and motivate employees.
+                  Professional commercial interior design services in Vizianagaram. We create functional, impressive business spaces that enhance productivity and leave lasting impressions on clients and employees.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3">
@@ -635,34 +635,35 @@ export default function VizianagramInteriors() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">What You Get vs. What You Pay</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">What You Get with Our Service</h3>
               
               <div className="space-y-6">
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
-                  <span className="font-semibold">Premium Modular Kitchen</span>
-                  <span className="text-gray-600">₹2.5L - ₹4.5L</span>
+                <div className="flex items-center p-4 bg-gray-50 rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-green-500 mr-4 flex-shrink-0" />
+                  <span className="font-semibold">Premium Modular Kitchen Design & Installation</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
-                  <span className="font-semibold">Complete Living Room Design</span>
-                  <span className="text-gray-600">₹1.8L - ₹3.2L</span>
+                <div className="flex items-center p-4 bg-gray-50 rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-green-500 mr-4 flex-shrink-0" />
+                  <span className="font-semibold">Complete Living Room Transformation</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
-                  <span className="font-semibold">Master Bedroom Interior</span>
-                  <span className="text-gray-600">₹1.5L - ₹2.8L</span>
+                <div className="flex items-center p-4 bg-gray-50 rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-green-500 mr-4 flex-shrink-0" />
+                  <span className="font-semibold">Master Bedroom & Storage Solutions</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
-                  <span className="font-semibold">Full 3BHK Apartment</span>
-                  <span className="text-gray-600">₹6L - ₹12L</span>
+                <div className="flex items-center p-4 bg-gray-50 rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-green-500 mr-4 flex-shrink-0" />
+                  <span className="font-semibold">Full Home Interior Design</span>
                 </div>
               </div>
               
               <div className="bg-green-50 p-6 rounded-2xl mt-8">
-                <h4 className="text-lg font-bold text-green-700 mb-2">Price Includes:</h4>
+                <h4 className="text-lg font-bold text-green-700 mb-2">Our Service Includes:</h4>
                 <ul className="text-green-600 space-y-1">
-                  <li>• Premium materials at wholesale rates</li>
-                  <li>• Professional design & 3D visualization</li>
-                  <li>• Complete execution & installation</li>
+                  <li>• Premium materials sourced directly</li>
+                  <li>• Professional 3D design visualization</li>
+                  <li>• Complete project execution</li>
                   <li>• 5-year comprehensive warranty</li>
+                  <li>• Transparent pricing with no hidden costs</li>
                 </ul>
               </div>
             </div>
@@ -719,6 +720,81 @@ export default function VizianagramInteriors() {
               <div key={index} className="bg-gray-50 rounded-2xl p-6 hover:bg-gray-100 transition-colors duration-300">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.q}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Local Materials & Suppliers Section */}
+      <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Premium Materials for Vizianagaram Climate
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              We source the best materials suited for Andhra Pradesh's climate conditions, ensuring longevity and durability.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4">Climate-Resistant Materials</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• Moisture-resistant MDF and plywood</li>
+                <li>• Anti-termite treated wood</li>
+                <li>• Humidity-proof laminate finishes</li>
+                <li>• Weather-resistant hardware</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4">Premium Brand Partners</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• Hettich and Blum hardware</li>
+                <li>• Fenix and Egger laminates</li>
+                <li>• Hafele accessories</li>
+                <li>• Quartz countertops</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4">Local Sourcing Benefits</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• Faster delivery to Vizianagaram</li>
+                <li>• Better warranty support</li>
+                <li>• Cost-effective solutions</li>
+                <li>• Quick replacement if needed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas in Detail */}
+      <section className="py-24 px-4 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-900 to-indigo-800 bg-clip-text text-transparent">
+              Areas We Serve Around Vizianagaram
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Comprehensive interior design services across Vizianagaram and neighboring areas.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              "Cantonment Area", "Fort Area", "Main Road", "Business District",
+              "Railway Station Road", "Maharaja Complex", "Suburban Areas", "Industrial Area"
+            ].map((area, index) => (
+              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span className="font-semibold text-gray-900">{area}</span>
+                </div>
+                <p className="text-gray-600 text-sm mt-2">Premium interior design services</p>
               </div>
             ))}
           </div>
