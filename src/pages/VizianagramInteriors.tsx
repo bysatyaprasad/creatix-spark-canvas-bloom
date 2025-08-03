@@ -80,7 +80,7 @@ export default function VizianagramInteriors() {
             "bestRating": "5"
           },
           "priceRange": "₹₹₹",
-          "telephone": "+91-9876543210",
+          "telephone": "+91-7842640744",
           "url": "https://creatixinteriors.com/interior-design-vizianagaram",
           "sameAs": [
             "https://www.facebook.com/creatixinteriors",
@@ -114,7 +114,7 @@ export default function VizianagramInteriors() {
             {/* Local authority badge */}
             <div className="inline-flex flex-col xs:flex-row items-center gap-2 xs:gap-4 px-6 xs:px-8 py-3 sm:py-4 bg-white/15 backdrop-blur-lg rounded-full border border-white/30 mb-6 sm:mb-10 animate-fade-in shadow-2xl hover:bg-white/20 transition-all duration-500">
               <Award className="w-6 h-6 text-amber-400 animate-pulse" />
-              <span className="text-base font-semibold tracking-wide">Vizianagaram's Most Trusted Interior Designers Since 2018</span>
+              <span className="text-base font-semibold tracking-wide">Serving Vizianagaram with Premium Interior Design</span>
               <div className="flex -space-x-2 xs:-space-x-3 mt-2 xs:mt-0">
                 <div className="w-7 h-7 xs:w-8 xs:h-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-7 h-7 xs:w-8 xs:h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -135,9 +135,9 @@ export default function VizianagramInteriors() {
             
             {/* Enhanced local description */}
             <p className="text-base xs:text-lg md:text-2xl lg:text-3xl text-gray-100 mb-10 sm:mb-16 font-light max-w-2xl sm:max-w-6xl mx-auto leading-relaxed animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-              Leading interior design company in Vizianagaram specializing in 
-              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">residential homes, commercial offices, retail spaces, and hospitality venues</span>. 
-              Serving Vizianagaram, Visakhapatnam, and surrounding areas with 287+ completed projects and guaranteed satisfaction.
+              Transforming Vizianagaram spaces with premium interior design services for 
+              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">homes, offices, retail stores, and commercial spaces</span>. 
+              Complete end-to-end design and build services with transparent pricing, quality materials, and exceptional craftsmanship throughout Andhra Pradesh.
             </p>
 
             {/* Trust indicators grid */}
@@ -146,16 +146,16 @@ export default function VizianagramInteriors() {
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-400 to-green-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                   <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Vizianagaram Local Experts</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Deep understanding of local architecture, climate, and cultural preferences of Vizianagaram residents.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Vizianagaram Design Specialists</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Deep understanding of regional architecture, climate considerations, and modern living preferences.</p>
               </div>
               
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.4s' }}>
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
                   <Users className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">287+ Happy Clients</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Trusted by families and businesses across Vizianagaram with 4.9/5 rating and 100% project completion record.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">500+ Happy Clients</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Trusted by families and businesses across regions with 4.9/5 rating and transparent process guarantee.</p>
               </div>
               
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.5s' }}>
@@ -259,7 +259,7 @@ export default function VizianagramInteriors() {
                   </div>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-2xl">
-                  <p className="text-blue-800 font-semibold">Starting from ₹1,50,000 for 2BHK homes in Vizianagaram</p>
+                  <p className="text-blue-800 font-semibold">Transparent pricing with detailed quotes - Contact us for personalized estimates</p>
                 </div>
               </div>
             </div>
@@ -744,7 +744,7 @@ export default function VizianagramInteriors() {
                     <Phone className="w-8 h-8 text-blue-600 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">Call for Immediate Response</p>
-                      <p className="text-gray-600">+91 98765 43210</p>
+                      <p className="text-gray-600">+91 7842640744</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-emerald-50 to-teal-50">

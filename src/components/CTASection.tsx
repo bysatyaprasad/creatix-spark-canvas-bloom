@@ -88,7 +88,7 @@ export default function CTASection() {
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <Phone className="h-12 w-12 text-white mx-auto mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500" />
               <h3 className="text-3xl font-bold text-white mb-6 font-playfair">Call Us</h3>
-              <p className="text-white/90 text-xl font-medium">+91 98765 43210</p>
+              <p className="text-white/90 text-xl font-medium">+91 7842640744</p>
               <p className="text-white/70 text-sm mt-2">Available 9 AM - 8 PM</p>
             </CardContent>
           </Card>
