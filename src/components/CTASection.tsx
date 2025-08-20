@@ -81,33 +81,15 @@ export default function CTASection() {
           </div>
         </div>
 
-        {/* Enhanced contact cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 xs:gap-10 max-w-2xl md:max-w-6xl mx-auto">
-          <Card className="bg-white/15 backdrop-blur-xl border-white/30 hover:bg-white/25 transition-all duration-700 group animate-slide-in-left shadow-2xl rounded-2xl xs:rounded-3xl overflow-hidden">
+        {/* Enhanced contact card - Phone only */}
+        <div className="flex justify-center max-w-2xl mx-auto">
+          <Card className="bg-white/15 backdrop-blur-xl border-white/30 hover:bg-white/25 transition-all duration-700 group animate-fade-in shadow-2xl rounded-2xl xs:rounded-3xl overflow-hidden">
             <CardContent className="p-6 xs:p-12 text-center relative">
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <Phone className="h-12 w-12 text-white mx-auto mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500" />
               <h3 className="text-3xl font-bold text-white mb-6 font-playfair">Call Us</h3>
               <p className="text-white/90 text-xl font-medium">+91 7842640744</p>
               <p className="text-white/70 text-sm mt-2">Available 9 AM - 8 PM</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-white/15 backdrop-blur-xl border-white/30 hover:bg-white/25 transition-all duration-700 group animate-fade-in shadow-2xl rounded-2xl xs:rounded-3xl overflow-hidden" style={{ animationDelay: '0.1s' }}>
-            <CardContent className="p-6 xs:p-12 text-center relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <Mail className="h-12 w-12 text-white mx-auto mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500" />
-              <h3 className="text-3xl font-bold text-white mb-6 font-playfair">Email Us</h3>
-              <p className="text-white/90 text-xl font-medium">hello@luxeinteriors.in</p>
-              <p className="text-white/70 text-sm mt-2">Quick response guaranteed</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-white/15 backdrop-blur-xl border-white/30 hover:bg-white/25 transition-all duration-700 group animate-slide-in-right shadow-2xl rounded-2xl xs:rounded-3xl overflow-hidden">
-            <CardContent className="p-6 xs:p-12 text-center relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <MapPin className="h-12 w-12 text-white mx-auto mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500" />
-              <h3 className="text-3xl font-bold text-white mb-6 font-playfair">Visit Us</h3>
-              <p className="text-white/90 text-xl font-medium">Major Cities Across India</p>
-              <p className="text-white/70 text-sm mt-2">Mumbai, Delhi, Bangalore & more</p>
             </CardContent>
           </Card>
         </div>

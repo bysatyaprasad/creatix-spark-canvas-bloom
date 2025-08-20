@@ -111,13 +111,9 @@ export default function PortfolioSection() {
             </p>
           </div>
           
-          <Button 
-            size="lg" 
-            className="w-full xs:w-auto max-w-xs xs:max-w-none bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 hover:from-amber-700 hover:via-amber-600 hover:to-yellow-600 text-black px-8 xs:px-20 py-5 xs:py-10 text-xl xs:text-2xl rounded-2xl xs:rounded-3xl font-bold transform hover:scale-102 xs:hover:scale-105 transition-all duration-500 shadow-2xl shadow-amber-500/30 group"
-          >
-            View Complete Portfolio
-            <ArrowUpRight className="ml-3 xs:ml-4 h-7 xs:h-8 w-7 xs:w-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-          </Button>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Ready to transform your space? Let's discuss your vision and create something beautiful together.
+          </p>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Phone, Mail, Clock, Award, Users, Star, CheckCircle, Sparkles, Shield, TrendingDown, Home, Building2, Store } from 'lucide-react';
+import { ArrowRight, MapPin, Phone, Clock, Award, Users, Star, CheckCircle, Sparkles, Shield, TrendingDown, Home, Building2, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -18,8 +18,7 @@ export default function HyderabadInteriors() {
             "addressLocality": "Hyderabad",
             "addressRegion": "Telangana",
             "postalCode": "500001",
-            "addressCountry": "IN",
-            "streetAddress": "Interior Design Studio, Hyderabad"
+            "addressCountry": "IN"
           },
           "geo": {
             "@type": "GeoCoordinates",
@@ -30,16 +29,6 @@ export default function HyderabadInteriors() {
             {
               "@type": "City",
               "name": "Hyderabad",
-              "containedIn": "Telangana, India"
-            },
-            {
-              "@type": "City", 
-              "name": "Secunderabad",
-              "containedIn": "Telangana, India"
-            },
-            {
-              "@type": "City",
-              "name": "Cyberabad", 
               "containedIn": "Telangana, India"
             }
           ],
@@ -62,14 +51,6 @@ export default function HyderabadInteriors() {
                   "name": "Commercial Interior Design Hyderabad",
                   "description": "Corporate office, IT company, and commercial space interior design in Hyderabad"
                 }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service", 
-                  "name": "Luxury Interior Design Hyderabad",
-                  "description": "High-end luxury interior design services for premium homes and offices in Hyderabad"
-                }
               }
             ]
           },
@@ -79,13 +60,8 @@ export default function HyderabadInteriors() {
             "reviewCount": "650",
             "bestRating": "5"
           },
-          "priceRange": "₹₹₹₹",
           "telephone": "+91-7842640744",
-          "url": "https://creatixinteriors.com/interior-design-hyderabad",
-          "sameAs": [
-            "https://www.facebook.com/creatixinteriors",
-            "https://www.instagram.com/creatixinteriors"
-          ]
+          "url": "https://creatixinteriors.com/interior-design-hyderabad"
         })}
       </script>
 
@@ -95,7 +71,7 @@ export default function HyderabadInteriors() {
         style={{ 
           background: `
             linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.85) 100%),
-            url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1974&auto=format&fit=crop')
+            url('https://images.unsplash.com/photo-1721322800607-8c38375eef04?q=80&w=1974&auto=format&fit=crop')
           `,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -111,10 +87,10 @@ export default function HyderabadInteriors() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-7xl mx-auto">
-            {/* Local authority badge */}
+            {/* Trust badge */}
             <div className="inline-flex flex-col xs:flex-row items-center gap-2 xs:gap-4 px-6 xs:px-8 py-3 sm:py-4 bg-white/15 backdrop-blur-lg rounded-full border border-white/30 mb-6 sm:mb-10 animate-fade-in shadow-2xl hover:bg-white/20 transition-all duration-500">
-              <Award className="w-6 h-6 text-amber-400 animate-pulse" />
-              <span className="text-base font-semibold tracking-wide">Serving Hyderabad with Premium Interior Design</span>
+              <Sparkles className="w-6 h-6 text-amber-400 animate-pulse" />
+              <span className="text-base font-semibold tracking-wide">Trusted by 500+ Happy Clients in Hyderabad</span>
               <div className="flex -space-x-2 xs:-space-x-3 mt-2 xs:mt-0">
                 <div className="w-7 h-7 xs:w-8 xs:h-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-7 h-7 xs:w-8 xs:h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -129,41 +105,41 @@ export default function HyderabadInteriors() {
                 in Hyderabad
               </span>
               <span className="block text-lg xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white/80 font-light mt-4 sm:mt-6 drop-shadow-xl">
-                Luxury Homes & Corporate Spaces
+                Transform Your Space, Transparent Process, Exceptional Results
               </span>
             </h1>
             
             {/* Enhanced local description */}
             <p className="text-base xs:text-lg md:text-2xl lg:text-3xl text-gray-100 mb-10 sm:mb-16 font-light max-w-2xl sm:max-w-6xl mx-auto leading-relaxed animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-              Expert interior designers serving Hyderabad with 
-              <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg mx-1">complete home transformations, luxury designs, modern apartments, and premium commercial spaces</span>. 
-              We travel to your location for consultations and project execution with our transparent process, quality guarantee, and no-hidden-costs promise.
+              Experience complete interior transformation in Hyderabad with our end-to-end design and build services for homes, offices, and commercial spaces. 
+              From concept to completion, we deliver <span className="text-amber-300 font-semibold bg-amber-900/20 px-2 py-1 rounded-lg">stunning interiors</span> with 
+              full transparency in pricing, process, and timeline—no surprises, just results.
             </p>
 
-            {/* Trust indicators grid */}
+            {/* Value proposition cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20 max-w-2xl sm:max-w-6xl mx-auto">
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.3s' }}>
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-400 to-green-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
-                  <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                  <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Metropolitan Design Experts</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Specialized in luxury metropolitan living, contemporary designs, and premium material sourcing.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">End-to-End Service</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Complete design and execution from concept to final installation. One team, seamless process.</p>
               </div>
               
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.4s' }}>
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
-                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                  <TrendingDown className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">500+ Happy Clients</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Trusted by families, professionals, and businesses across regions with 4.9/5 rating and transparent process.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Transparent Pricing</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Clear breakdowns of costs, timelines, and processes. Know exactly what you're investing in.</p>
               </div>
               
               <div className="group bg-white/10 backdrop-blur-lg rounded-3xl p-6 xs:p-8 sm:p-10 border border-white/20 hover:bg-white/20 transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-102 sm:hover:scale-105 animate-fade-in shadow-2xl" style={{ animationDelay: '0.5s' }}>
                 <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-3xl flex items-center justify-center mb-4 sm:mb-8 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
-                  <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                  <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Premium Quality</h3>
-                <p className="text-white/90 leading-relaxed text-base sm:text-lg">International design standards with comprehensive warranty and luxury material sourcing.</p>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-white">Quality Guaranteed</h3>
+                <p className="text-white/90 leading-relaxed text-base sm:text-lg">Premium materials and expert craftsmanship with comprehensive warranties on all work.</p>
               </div>
             </div>
 
@@ -171,28 +147,29 @@ export default function HyderabadInteriors() {
             <div className="animate-fade-in flex flex-col items-center w-full" style={{ animationDelay: '0.6s' }}>
               <Button 
                 size="lg" 
-                className="w-full xs:w-auto max-w-[380px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-20 py-5 sm:py-10 text-lg xs:text-xl sm:text-2xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0 mb-6 sm:mb-8"
+                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-20 py-5 sm:py-10 text-lg xs:text-xl sm:text-2xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0 mb-6 sm:mb-8"
               >
-                Get Free Home Visit & Quote in Hyderabad
+                Get Your Honest Quote in Hyderabad
                 <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
               </Button>
               
-              {/* Local testimonial with more detail */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 xs:p-8 max-w-full xs:max-w-3xl mx-auto border border-white/20 shadow-2xl">
+              {/* Enhanced testimonial */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 xs:p-8 max-w-full xs:max-w-2xl mx-auto border border-white/20 shadow-2xl">
                 <p className="text-base xs:text-lg text-white/90 mb-4 xs:mb-6 italic leading-relaxed">
-                  "Absolutely stunning interior design for our luxury villa in Hyderabad! They perfectly captured our vision while adding contemporary elegance. World-class quality!"
+                  "Finally, a design service that delivers exactly what they promise. The transparency throughout was refreshing!"
                 </p>
                 
-                <div className="flex flex-col xs:flex-row items-center justify-between gap-4 text-xs xs:text-sm text-white/70">
-                  <div className="flex items-center gap-2">
+                <div className="flex flex-col xs:flex-row items-center justify-center gap-2 xs:gap-6 text-xs xs:text-sm text-white/70">
+                  <div className="flex items-center gap-1 xs:gap-2 mb-2 xs:mb-0">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="text-amber-400 w-4 h-4 fill-current" />
+                        <span key={i} className="text-amber-400 text-sm xs:text-lg">★</span>
                       ))}
                     </div>
-                    <span className="font-semibold">4.9/5 Rating</span>
+                    <span className="font-semibold">4.9/5</span>
                   </div>
-                  <span className="text-center">- Arjun & Kavya, Jubilee Hills, Hyderabad</span>
+                  <span className="hidden xs:inline">•</span>
+                  <span>500+ verified reviews</span>
                 </div>
               </div>
             </div>
@@ -202,7 +179,7 @@ export default function HyderabadInteriors() {
         <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-40 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
       </section>
 
-      {/* Comprehensive Services Section */}
+      {/* Services Section */}
       <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-20">
@@ -210,7 +187,7 @@ export default function HyderabadInteriors() {
               Complete Interior Design Services in Hyderabad
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              From concept to completion, we deliver complete interior design solutions for luxury homes, apartments, commercial spaces across Hyderabad. Our team travels to your location with transparent pricing and quality materials.
+              From concept to completion, we deliver complete interior design solutions for homes, apartments, and commercial spaces across Hyderabad. Our team travels to your location with transparent pricing and premium materials.
             </p>
           </div>
 
@@ -220,46 +197,43 @@ export default function HyderabadInteriors() {
             <div className="group relative overflow-hidden rounded-3xl bg-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
               <div 
                 className="h-64 bg-cover bg-center relative"
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop')` }}
+                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop')` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">Luxury Residential Design</h3>
-                  <p className="text-gray-200">Premium homes for Hyderabad's elite neighborhoods</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">Residential Interior Design</h3>
+                  <p className="text-gray-200">Complete home transformation services</p>
                 </div>
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Transform your Hyderabad home with our proven luxury design process. From 3D visualization to final installation, we ensure every detail meets your vision with our transparent workflow and quality guarantee.
+                  Transform your Hyderabad home with our proven interior design process. From 3D visualization to final installation, we ensure every detail meets your vision with our transparent workflow and quality guarantee.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Luxury Kitchen Design</span>
+                    <span className="text-gray-700">Modular Kitchen Design</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Premium Living Rooms</span>
+                    <span className="text-gray-700">Living Room Interiors</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Master Suite Design</span>
+                    <span className="text-gray-700">Master Bedroom Design</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Home Theater Rooms</span>
+                    <span className="text-gray-700">Children's Room</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Spa Bathrooms</span>
+                    <span className="text-gray-700">Pooja Room Design</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Villa Landscaping</span>
+                    <span className="text-gray-700">Bathroom Renovation</span>
                   </div>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-2xl">
-                  <p className="text-blue-800 font-semibold">Transparent pricing with detailed quotes - Contact us for personalized estimates</p>
                 </div>
               </div>
             </div>
@@ -268,12 +242,12 @@ export default function HyderabadInteriors() {
             <div className="group relative overflow-hidden rounded-3xl bg-white shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
               <div 
                 className="h-64 bg-cover bg-center relative"
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1200&auto=format&fit=crop')` }}
+                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop')` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">Corporate & Tech Offices</h3>
-                  <p className="text-gray-200">World-class offices for Hyderabad's business hubs</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">Commercial Interior Design</h3>
+                  <p className="text-gray-200">Professional workspace solutions</p>
                 </div>
               </div>
               <div className="p-8">
@@ -283,397 +257,249 @@ export default function HyderabadInteriors() {
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Tech Office Design</span>
+                    <span className="text-gray-700">Office Interior Design</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Executive Boardrooms</span>
+                    <span className="text-gray-700">Retail Space Design</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Modern Workstations</span>
+                    <span className="text-gray-700">Restaurant Interiors</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Innovation Centers</span>
+                    <span className="text-gray-700">Healthcare Spaces</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Corporate Cafeterias</span>
+                    <span className="text-gray-700">Educational Facilities</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">Premium Lobbies</span>
+                    <span className="text-gray-700">Hospitality Design</span>
                   </div>
-                </div>
-                <div className="bg-green-50 p-4 rounded-2xl">
-                  <p className="text-green-800 font-semibold">Free consultation and detailed quote available - Contact us for personalized pricing</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Specialized Services */}
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Detailed Services Section */}
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            <Card className="p-8 group hover:shadow-xl transition-all duration-500 border-0 shadow-lg">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500">
+                  <Home className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Residential Experts</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Specialized in transforming homes with modern designs that reflect your personality while maintaining functionality and comfort.
+                </p>
+              </div>
+            </Card>
+            
+            <Card className="p-8 group hover:shadow-xl transition-all duration-500 border-0 shadow-lg">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500">
+                  <Building2 className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Commercial Solutions</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Creating professional environments that boost productivity, enhance brand image, and provide exceptional experiences for employees and clients.
+                </p>
+              </div>
+            </Card>
+            
+            <Card className="p-8 group hover:shadow-xl transition-all duration-500 border-0 shadow-lg">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500">
+                  <Store className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Retail & Hospitality</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Designing spaces that attract customers, enhance experiences, and drive business success through strategic layout and aesthetic appeal.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-24 px-4 bg-gradient-to-br from-slate-50 to-gray-100">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Our Transparent Process
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              From initial consultation to final installation, every step is clearly defined with transparent pricing and regular updates.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Luxury Villa Design",
-                description: "Complete villa transformations in Hyderabad's premium localities like Jubilee Hills, Banjara Hills, and Kondapur.",
-                icon: <Home className="w-8 h-8" />,
-                price: "Contact for Quote"
+                step: "01",
+                title: "Free Consultation",
+                description: "We visit your space in Hyderabad, understand your needs, and provide honest advice with transparent pricing.",
+                icon: Phone
               },
               {
-                title: "Corporate Headquarters",
-                description: "Impressive corporate office designs for multinational companies and tech giants in HITEC City and Financial District.",
-                icon: <Building2 className="w-8 h-8" />,
-                price: "Contact for Quote"
+                step: "02", 
+                title: "Design & Planning",
+                description: "Create detailed 3D designs, material selection, and comprehensive project timeline with fixed costs.",
+                icon: Sparkles
               },
               {
-                title: "Premium Retail Spaces",
-                description: "High-end retail showrooms and luxury boutiques in Hyderabad's prime commercial areas and malls.",
-                icon: <Store className="w-8 h-8" />,
-                price: "Contact for Quote"
+                step: "03",
+                title: "Execution",
+                description: "Professional execution with quality materials, regular updates, and adherence to agreed timelines.",
+                icon: Users
+              },
+              {
+                step: "04",
+                title: "Final Handover",
+                description: "Complete installation, quality check, and handover with warranty and maintenance guidelines.",
+                icon: Award
               }
-            ].map((service, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 text-white">
-                  {service.icon}
+            ].map((item, index) => (
+              <Card key={index} className="p-8 group hover:shadow-xl transition-all duration-500 border-0 shadow-lg relative overflow-hidden">
+                <div className="absolute top-4 right-4 text-6xl font-bold text-gray-100 group-hover:text-amber-100 transition-colors duration-500">
+                  {item.step}
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{service.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
-                <div className="bg-purple-50 p-3 rounded-xl">
-                  <span className="text-purple-700 font-semibold text-sm">{service.price}</span>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                    <item.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">{item.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              Why Choose Creatix Interiors for Your Hyderabad Project?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              We understand Hyderabad's cosmopolitan lifestyle and business culture. Luxury quality without inflated prices.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h3 className="text-3xl font-bold mb-8 text-gray-900">Luxury Expertise Meets Smart Pricing</h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Building2 className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">HITEC City Expertise</h4>
-                    <p className="text-gray-600">8+ years designing premium offices for tech giants in Hyderabad's IT corridors. Modern, impressive, functional.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Home className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Luxury Residential Projects</h4>
-                    <p className="text-gray-600">Designed 150+ premium homes in Jubilee Hills, Banjara Hills, and Gachibowli. Sophisticated elegance at honest prices.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Award className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Premium Material Access</h4>
-                    <p className="text-gray-600">Direct relationships with luxury suppliers. Access to Italian marble, German fittings, and designer furniture at wholesale rates.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-green-50 p-6 rounded-2xl mt-8">
-                <div className="text-3xl font-bold text-green-600 mb-2">650+ Projects</div>
-                <p className="text-green-700">completed across Hyderabad with 4.9/5 rating</p>
-              </div>
-            </div>
-            
-            <div 
-              className="relative h-96 bg-cover bg-center rounded-3xl shadow-2xl"
-              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop')` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <div className="text-2xl font-bold mb-2">Luxury Design Experts</div>
-                <div className="text-gray-200">Hyderabad's premium interior designers</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Features Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Luxury Market Leadership",
-                description: "8+ years serving Hyderabad's premium residential and commercial markets. Trusted by corporate leaders and celebrities.",
-                icon: <Shield className="w-8 h-8" />
-              },
-              {
-                title: "Tech Sector Specialist",
-                description: "Designed offices for 50+ tech companies in HITEC City. Modern workspaces that enhance productivity and company culture.",
-                icon: <Building2 className="w-8 h-8" />
-              },
-              {
-                title: "Transparent Luxury Pricing", 
-                description: "Premium materials at honest prices. See exactly what luxury costs - no designer markups, no hidden fees.",
-                icon: <TrendingDown className="w-8 h-8" />
-              },
-              {
-                title: "Quality Assurance",
-                description: "5-year comprehensive warranty on all work. Premium materials and expert craftsmanship guaranteed.",
-                icon: <CheckCircle className="w-8 h-8" />
-              },
-              {
-                title: "Hyderabad Presence",
-                description: "Dedicated team across key areas - HITEC City, Gachibowli, Jubilee Hills, and Banjara Hills for immediate support.",
-                icon: <MapPin className="w-8 h-8" />
-              },
-              {
-                title: "Premium Portfolio",
-                description: "650+ luxury projects including corporate headquarters, premium villas, and high-end commercial spaces.",
-                icon: <Award className="w-8 h-8" />
-              }
-            ].map((feature, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 text-white">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
       <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              Our Luxury Design Process
+              Why Choose Us for Your Hyderabad Interior Project?
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              From luxury consultation to flawless execution - here's how we transform your Hyderabad space
-            </p>
           </div>
 
-          <div className="grid lg:grid-cols-4 gap-8">
-            {[
-              {
-                step: "Step 1",
-                title: "Luxury Consultation",
-                description: "Visit your Hyderabad location to understand your lifestyle, preferences, and space requirements. Detailed brief and budget discussion.",
-                icon: <MapPin className="w-8 h-8" />
-              },
-              {
-                step: "Step 2", 
-                title: "Premium Design Creation",
-                description: "Create detailed 3D visualizations and luxury material selections. Multiple design options with transparent pricing.",
-                icon: <Home className="w-8 h-8" />
-              },
-              {
-                step: "Step 3",
-                title: "Luxury Material Sourcing",
-                description: "Source premium materials through our luxury supplier network. Italian marble, German fittings, designer furniture at wholesale rates.",
-                icon: <Sparkles className="w-8 h-8" />
-              },
-              {
-                step: "Step 4",
-                title: "Expert Execution", 
-                description: "Flawless installation by master craftsmen. Project management ensures timely delivery with zero compromise on quality.",
-                icon: <Award className="w-8 h-8" />
-              }
-            ].map((process, index) => (
-              <div key={index} className="relative">
-                {index < 3 && (
-                  <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 z-0"></div>
-                )}
-                <div className="relative z-10 text-center p-8 bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white">
-                    {process.icon}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="space-y-8">
+                {[
+                  {
+                    title: "Transparent Pricing",
+                    description: "No hidden costs, no surprise charges. Every expense is clearly outlined before we begin.",
+                    icon: TrendingDown
+                  },
+                  {
+                    title: "Quality Guarantee", 
+                    description: "Premium materials and expert craftsmanship backed by comprehensive warranties.",
+                    icon: Shield
+                  },
+                  {
+                    title: "End-to-End Service",
+                    description: "From design to installation, we handle everything so you don't have to coordinate with multiple vendors.",
+                    icon: CheckCircle
+                  },
+                  {
+                    title: "Proven Track Record",
+                    description: "500+ successful projects with 4.9/5 customer satisfaction rating across all service areas.",
+                    icon: Star
+                  }
+                ].map((feature, index) => (
+                  <div key={index} className="flex gap-6 group">
+                    <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all duration-500">
+                      <feature.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-gray-900">{feature.title}</h3>
+                      <p className="text-gray-600 leading-relaxed text-lg">{feature.description}</p>
+                    </div>
                   </div>
-                  <div className="inline-block px-4 py-2 bg-purple-500 text-white text-sm font-bold rounded-full mb-4">
-                    {process.step}
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">{process.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{process.description}</p>
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQs Section for Local SEO */}
-      <section className="py-24 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
-            Frequently Asked Questions - Interior Design in Hyderabad
-          </h2>
-          
-          <div className="space-y-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">What is the cost of luxury interior design in Hyderabad?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Luxury interior design costs in Hyderabad range from ₹2,500 to ₹6,000 per square foot for premium residences, and ₹1,800 to ₹4,500 per square foot for corporate spaces, depending on design complexity and material selection.
-              </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Do you design for luxury areas like Jubilee Hills and Banjara Hills?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Yes, we specialize in luxury interior design for premium areas in Hyderabad including Jubilee Hills, Banjara Hills, Film Nagar, and other upscale neighborhoods. We understand the sophisticated requirements of these localities.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Can you design IT offices and corporate spaces in Hyderabad?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Absolutely! We have extensive experience designing IT offices in Gachibowli, Hitech City, and Madhapur. Our corporate designs focus on productivity, employee wellness, and modern technology integration.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">What areas of Hyderabad do you serve?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                We serve all areas of Hyderabad including Jubilee Hills, Banjara Hills, Gachibowli, Hitech City, Madhapur, Kondapur, Begumpet, Secunderabad, and surrounding areas. We also work on projects in Cyberabad.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Do you offer smart home integration with interior design?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Yes, we specialize in smart home integration including home automation, intelligent lighting, climate control, security systems, and IoT device integration as part of our luxury interior design services.
-              </p>
+            <div className="relative">
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 lg:p-12">
+                <h3 className="text-3xl font-bold mb-6 text-gray-900">Ready to Get Started?</h3>
+                <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                  Join hundreds of satisfied customers in Hyderabad who have transformed their spaces with our transparent process and quality guarantee.
+                </p>
+                
+                <div className="space-y-4 mb-8">
+                  {[
+                    "Free consultation and site visit",
+                    "Detailed project quote with timeline", 
+                    "3D design visualization",
+                    "Premium materials at transparent prices",
+                    "5-year comprehensive warranty"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-gray-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <Button 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
+                >
+                  Schedule Free Consultation
+                  <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-slate-900 to-gray-900 text-white relative overflow-hidden">
+      <section className="py-24 px-4 bg-gradient-to-br from-amber-900 via-orange-900 to-red-900 relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-br from-amber-400/10 to-orange-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-purple-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-20 w-48 h-48 bg-white/8 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-64 h-64 bg-white/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
-        
-        <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Ready to Transform Your Hyderabad Space?
+
+        <div className="container mx-auto px-6 sm:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 font-playfair">
+              Transform Your Space Today
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto">
-              Contact Hyderabad's leading luxury interior designers for a free consultation.
+            <p className="text-xl text-white/90 mb-12 leading-relaxed">
+              Ready to experience the difference of transparent pricing and quality craftsmanship? Let's discuss your project.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-8 text-white">Get Your Free Luxury Design Consultation</h3>
-              
-              <div className="space-y-6 mb-10">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-300">Call Us Now</p>
-                    <p className="text-xl font-bold text-white">+91-7842640744</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-300">Email Us</p>
-                    <p className="text-xl font-bold text-white">info@creatixinteriors.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-green-500 rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-300">Visit Our Showroom</p>
-                    <p className="text-xl font-bold text-white">Hyderabad, Telangana</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-300">Working Hours</p>
-                    <p className="text-xl font-bold text-white">Mon-Sat: 9AM-7PM</p>
-                  </div>
-                </div>
-              </div>
-              
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 text-lg rounded-2xl font-bold transition-all duration-300 shadow-2xl hover:shadow-amber-500/40"
-              >
-                Book Free Home Visit in Hyderabad
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </Button>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <Card className="bg-white/15 backdrop-blur-xl border-white/30 shadow-2xl rounded-3xl overflow-hidden">
+              <CardContent className="p-12 text-center">
+                <Phone className="h-16 w-16 text-white mx-auto mb-8" />
+                <h3 className="text-4xl font-bold text-white mb-6 font-playfair">Call Us Now</h3>
+                <p className="text-white/90 text-2xl font-medium mb-4">+91 7842640744</p>
+                <p className="text-white/70 text-lg">Available 9 AM - 8 PM | Free Consultation</p>
+              </CardContent>
+            </Card>
+          </div>
 
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-              <h4 className="text-2xl font-bold mb-6 text-white">Why Choose Us for Your Hyderabad Project?</h4>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <h5 className="font-semibold text-white mb-1">Luxury Expertise</h5>
-                    <p className="text-gray-300">Specialized in high-end interior design for Hyderabad's affluent clientele</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <h5 className="font-semibold text-white mb-1">Tech Integration</h5>
-                    <p className="text-gray-300">Smart home solutions and modern technology integration</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <h5 className="font-semibold text-white mb-1">International Standards</h5>
-                    <p className="text-gray-300">World-class quality with premium materials and expert craftsmanship</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <h5 className="font-semibold text-white mb-1">Executive Service</h5>
-                    <p className="text-gray-300">Dedicated account management and white-glove service delivery</p>
-                  </div>
-                </div>
+          <div className="text-center mt-16">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl mx-auto border border-white/20 shadow-2xl">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-6 h-6 text-amber-400 fill-current" />
+                ))}
               </div>
+              <p className="text-white/90 text-lg italic mb-2">"Exceptional quality, honest pricing, and transparent service."</p>
+              <p className="text-white/70 text-sm">4.9/5 from 500+ verified customers</p>
             </div>
           </div>
         </div>
