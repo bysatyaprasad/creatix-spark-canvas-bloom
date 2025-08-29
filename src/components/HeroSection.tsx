@@ -85,15 +85,47 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Enhanced CTA Section */}
-          <div className="animate-fade-in flex flex-col items-center w-full" style={{ animationDelay: '0.6s' }}>
-            <Button 
-              size="lg" 
-              className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-20 py-5 sm:py-10 text-lg xs:text-xl sm:text-2xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0 mb-6 sm:mb-8"
-            >
-              Get Your Honest Quote
-              <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
-            </Button>
+          {/* Enhanced CTA Section with Call/WhatsApp */}
+          <div className="animate-fade-in flex flex-col items-center w-full gap-4" style={{ animationDelay: '0.6s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+              <Button 
+                size="lg" 
+                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
+                onClick={() => window.open('tel:+917842640744')}
+              >
+                Call +91 7842640744
+                <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
+              </Button>
+              
+              <Button 
+                size="lg" 
+                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
+                onClick={() => window.open('tel:+916304746801')}
+              >
+                Call +91 6304746801
+                <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
+              </Button>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-6 sm:mb-8">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
+                onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+              >
+                WhatsApp +91 7842640744
+              </Button>
+              
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
+                onClick={() => window.open('https://wa.me/916304746801', '_blank')}
+              >
+                WhatsApp +91 6304746801
+              </Button>
+            </div>
             
             {/* Enhanced testimonial */}
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 xs:p-8 max-w-full xs:max-w-2xl mx-auto border border-white/20 shadow-2xl">

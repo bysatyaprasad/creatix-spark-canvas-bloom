@@ -143,15 +143,47 @@ export default function VisakhapatnamInteriors() {
               </div>
             </div>
 
-            {/* Enhanced CTA */}
-            <div className="animate-fade-in flex flex-col items-center w-full" style={{ animationDelay: '0.6s' }}>
-              <Button 
-                size="lg" 
-                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-20 py-5 sm:py-10 text-lg xs:text-xl sm:text-2xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0 mb-6 sm:mb-8"
-              >
-                Get Your Honest Quote in Visakhapatnam
-                <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
-              </Button>
+            {/* Enhanced CTA with Call/WhatsApp */}
+            <div className="animate-fade-in flex flex-col items-center w-full gap-4" style={{ animationDelay: '0.6s' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                <Button 
+                  size="lg" 
+                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
+                  onClick={() => window.open('tel:+917842640744')}
+                >
+                  Call +91 7842640744
+                  <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
+                  onClick={() => window.open('tel:+916304746801')}
+                >
+                  Call +91 6304746801
+                  <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
+                </Button>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-6 sm:mb-8">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
+                  onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                >
+                  WhatsApp +91 7842640744
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
+                  onClick={() => window.open('https://wa.me/916304746801', '_blank')}
+                >
+                  WhatsApp +91 6304746801
+                </Button>
+              </div>
               
               {/* Enhanced testimonial */}
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 xs:p-8 max-w-full xs:max-w-2xl mx-auto border border-white/20 shadow-2xl">
@@ -450,13 +482,25 @@ export default function VisakhapatnamInteriors() {
                   ))}
                 </div>
                 
-                <Button 
-                  size="lg" 
-                  className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
-                >
-                  Schedule Free Consultation
-                  <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
-                </Button>
+                <div className="flex flex-col gap-4">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
+                    onClick={() => window.open('tel:+917842640744')}
+                  >
+                    Call +91 7842640744
+                    <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
+                  </Button>
+                  
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="w-full border-2 border-orange-500 text-orange-600 bg-orange-50 hover:bg-orange-100 px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
+                    onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                  >
+                    WhatsApp +91 7842640744
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -485,7 +529,8 @@ export default function VisakhapatnamInteriors() {
               <CardContent className="p-12 text-center">
                 <Phone className="h-16 w-16 text-white mx-auto mb-8" />
                 <h3 className="text-4xl font-bold text-white mb-6 font-playfair">Call Us Now</h3>
-                <p className="text-white/90 text-2xl font-medium mb-4">+91 7842640744</p>
+                <p className="text-white/90 text-2xl font-medium mb-2">+91 7842640744</p>
+                <p className="text-white/90 text-2xl font-medium mb-4">+91 6304746801</p>
                 <p className="text-white/70 text-lg">Available 9 AM - 8 PM | Free Consultation</p>
               </CardContent>
             </Card>
