@@ -75,13 +75,28 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-8">
-            <p className="text-gray-600 mb-4">Don't see your city? We serve many more locations across India.</p>
-            <a href="/contact" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold">
-              Contact us for your area
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
+            <p className="text-gray-600 mb-6">Don't see your city? We serve many more locations across India.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button 
+                className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                onClick={() => window.open('tel:+917842640744')}
+              >
+                Call +91 7842640744
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              
+              <button 
+                className="inline-flex items-center gap-2 border-2 border-amber-600 text-amber-600 hover:bg-amber-50 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+              >
+                WhatsApp Us
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>

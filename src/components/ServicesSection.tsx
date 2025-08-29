@@ -232,11 +232,40 @@ export default function ServicesSection() {
                 no hidden fees, no surprises. Experience the difference honest pricing makes.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-                <button className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-amber-500/25">
-                  Get Your Transparent Quote
-                  <ArrowRight className="w-6 h-6" />
-                </button>
+              <div className="flex flex-col gap-6 justify-center items-center mb-8">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button 
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-amber-500/25"
+                    onClick={() => window.open('tel:+917842640744')}
+                  >
+                    Call +91 7842640744
+                    <ArrowRight className="w-6 h-6" />
+                  </button>
+                  
+                  <button 
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-amber-500/25"
+                    onClick={() => window.open('tel:+916304746801')}
+                  >
+                    Call +91 6304746801
+                    <ArrowRight className="w-6 h-6" />
+                  </button>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button 
+                    className="inline-flex items-center gap-3 border-2 border-amber-500 text-amber-600 bg-amber-50 hover:bg-amber-100 px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                  >
+                    WhatsApp +91 7842640744
+                  </button>
+                  
+                  <button 
+                    className="inline-flex items-center gap-3 border-2 border-amber-500 text-amber-600 bg-amber-50 hover:bg-amber-100 px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    onClick={() => window.open('https://wa.me/916304746801', '_blank')}
+                  >
+                    WhatsApp +91 6304746801
+                  </button>
+                </div>
                 
                 <div className="flex items-center gap-3 text-gray-600">
                   <Clock className="w-5 h-5" />
