@@ -1,7 +1,10 @@
 import { ArrowRight, Sparkles, Shield, TrendingDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useContactModal } from '@/components/ui/contact-modal';
 
 export default function HeroSection() {
+  const { openModal, ContactModal } = useContactModal();
+  
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center text-white overflow-hidden pt-16 pb-8 sm:pt-28 sm:pb-16"
@@ -85,45 +88,25 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Enhanced CTA Section with Call/WhatsApp */}
+          {/* Enhanced CTA Section */}
           <div className="animate-fade-in flex flex-col items-center w-full gap-4" style={{ animationDelay: '0.6s' }}>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-              <Button 
-                size="lg" 
-                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
-                onClick={() => window.open('tel:+917842640744')}
-              >
-                Call +91 7842640744
-                <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
-              </Button>
-              
-              <Button 
-                size="lg" 
-                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
-                onClick={() => window.open('tel:+916304746801')}
-              >
-                Call +91 6304746801
-                <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
-              </Button>
-            </div>
-            
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-6 sm:mb-8">
               <Button 
                 size="lg" 
-                variant="outline"
-                className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
-                onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
+                onClick={openModal}
               >
-                WhatsApp +91 7842640744
+                Schedule Free Consultation
+                <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
               </Button>
               
               <Button 
                 size="lg" 
                 variant="outline"
                 className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
-                onClick={() => window.open('https://wa.me/916304746801', '_blank')}
+                onClick={openModal}
               >
-                WhatsApp +91 6304746801
+                Get Honest Quote
               </Button>
             </div>
             
@@ -152,6 +135,8 @@ export default function HeroSection() {
 
       {/* Enhanced bottom gradient overlay */}
       <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-40 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
+      
+      <ContactModal triggerText="Schedule Free Consultation" />
     </section>
   );
 }

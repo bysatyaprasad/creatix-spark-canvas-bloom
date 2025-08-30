@@ -1,8 +1,11 @@
 import { ArrowRight, MapPin, Phone, Clock, Award, Users, Star, CheckCircle, Sparkles, Shield, TrendingDown, Home, Building2, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useContactModal } from '@/components/ui/contact-modal';
 
 export default function HyderabadInteriors() {
+  const { openModal, ContactModal } = useContactModal();
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Enhanced SEO Header with Structured Data */}
@@ -486,9 +489,9 @@ export default function HyderabadInteriors() {
                   <Button 
                     size="lg" 
                     className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
-                    onClick={() => window.open('tel:+917842640744')}
+                    onClick={openModal}
                   >
-                    Call +91 7842640744
+                    Get Free Consultation
                     <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
                   </Button>
                   
@@ -496,9 +499,9 @@ export default function HyderabadInteriors() {
                     size="lg" 
                     variant="outline"
                     className="w-full border-2 border-orange-500 text-orange-600 bg-orange-50 hover:bg-orange-100 px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
-                    onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                    onClick={openModal}
                   >
-                    WhatsApp +91 7842640744
+                    Get Transparent Quote
                   </Button>
                 </div>
               </div>
@@ -549,6 +552,8 @@ export default function HyderabadInteriors() {
           </div>
         </div>
       </section>
+      
+      <ContactModal triggerText="Get Free Consultation" />
     </div>
   );
 }

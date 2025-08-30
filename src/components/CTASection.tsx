@@ -1,8 +1,11 @@
 import { ArrowRight, Phone, Mail, MapPin, Sparkles, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useContactModal } from '@/components/ui/contact-modal';
 
 export default function CTASection() {
+  const { openModal, ContactModal } = useContactModal();
+  
   return (
     <section className="py-16 xs:py-24 sm:py-40 bg-gradient-to-br from-amber-900 via-orange-900 to-red-900 relative overflow-hidden">
       {/* Enhanced background elements */}
@@ -61,47 +64,25 @@ export default function CTASection() {
             </div>
           </div>
           
-          {/* Enhanced CTA buttons with Call/WhatsApp */}
-          <div className="flex flex-col gap-4 justify-center items-center mb-12 xs:mb-20">
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto max-w-xs sm:max-w-none bg-white text-amber-900 hover:bg-gray-100 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl group font-bold shadow-2xl transform hover:scale-105 transition-all duration-500"
-                onClick={() => window.open('tel:+917842640744')}
-              >
-                Call +91 7842640744
-                <ArrowRight className="ml-3 sm:ml-4 h-7 sm:h-8 w-7 sm:w-8 group-hover:translate-x-2 transition-transform duration-500" />
-              </Button>
-              
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto max-w-xs sm:max-w-none bg-white text-amber-900 hover:bg-gray-100 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl group font-bold shadow-2xl transform hover:scale-105 transition-all duration-500"
-                onClick={() => window.open('tel:+916304746801')}
-              >
-                Call +91 6304746801
-                <ArrowRight className="ml-3 sm:ml-4 h-7 sm:h-8 w-7 sm:w-8 group-hover:translate-x-2 transition-transform duration-500" />
-              </Button>
-            </div>
+          {/* Enhanced CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center mb-12 xs:mb-20">
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto max-w-xs sm:max-w-none bg-white text-amber-900 hover:bg-gray-100 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl group font-bold shadow-2xl transform hover:scale-105 transition-all duration-500"
+              onClick={openModal}
+            >
+              Get Free Consultation
+              <ArrowRight className="ml-3 sm:ml-4 h-7 sm:h-8 w-7 sm:w-8 group-hover:translate-x-2 transition-transform duration-500" />
+            </Button>
             
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center">
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full sm:w-auto max-w-xs sm:max-w-none border-2 sm:border-3 border-white text-white bg-transparent hover:bg-white/15 hover:border-white/80 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl font-bold backdrop-blur-lg transform hover:scale-105 transition-all duration-500 shadow-2xl"
-                onClick={() => window.open('https://wa.me/917842640744', '_blank')}
-              >
-                WhatsApp +91 7842640744
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full sm:w-auto max-w-xs sm:max-w-none border-2 sm:border-3 border-white text-white bg-transparent hover:bg-white/15 hover:border-white/80 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl font-bold backdrop-blur-lg transform hover:scale-105 transition-all duration-500 shadow-2xl"
-                onClick={() => window.open('https://wa.me/916304746801', '_blank')}
-              >
-                WhatsApp +91 6304746801
-              </Button>
-            </div>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="w-full sm:w-auto max-w-xs sm:max-w-none border-2 sm:border-3 border-white text-white bg-transparent hover:bg-white/15 hover:border-white/80 px-8 sm:px-20 py-5 sm:py-10 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl font-bold backdrop-blur-lg transform hover:scale-105 transition-all duration-500 shadow-2xl"
+              onClick={openModal}
+            >
+              Get Transparent Quote
+            </Button>
           </div>
         </div>
 
@@ -132,6 +113,8 @@ export default function CTASection() {
           </div>
         </div>
       </div>
+      
+      <ContactModal triggerText="Get Free Consultation" />
     </section>
   );
 }

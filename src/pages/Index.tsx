@@ -4,8 +4,11 @@ import ServicesSection from '@/components/ServicesSection';
 import PortfolioSection from '@/components/PortfolioSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import CTASection from '@/components/CTASection';
+import { useContactModal } from '@/components/ui/contact-modal';
 
 const Index = () => {
+  const { openModal, ContactModal } = useContactModal();
+  
   return (
     <div className="min-h-screen">
       <HeroSection />
@@ -79,9 +82,9 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
                 className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.open('tel:+917842640744')}
+                onClick={openModal}
               >
-                Call +91 7842640744
+                Contact Us for Your Area
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -89,9 +92,9 @@ const Index = () => {
               
               <button 
                 className="inline-flex items-center gap-2 border-2 border-amber-600 text-amber-600 hover:bg-amber-50 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                onClick={openModal}
               >
-                WhatsApp Us
+                Get Free Quote
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -102,6 +105,8 @@ const Index = () => {
       </section>
       
       <CTASection />
+      
+      <ContactModal triggerText="Contact Us for Your Area" />
     </div>
   );
 };

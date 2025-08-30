@@ -1,8 +1,11 @@
 import { ArrowRight, MapPin, Phone, Clock, Award, Users, Star, CheckCircle, Sparkles, Shield, TrendingDown, Home, Building2, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useContactModal } from '@/components/ui/contact-modal';
 
 export default function VizianagramInteriors() {
+  const { openModal, ContactModal } = useContactModal();
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Enhanced SEO Header with Structured Data */}
@@ -143,45 +146,25 @@ export default function VizianagramInteriors() {
               </div>
             </div>
 
-            {/* Enhanced CTA with Call/WhatsApp */}
+            {/* Enhanced CTA */}
             <div className="animate-fade-in flex flex-col items-center w-full gap-4" style={{ animationDelay: '0.6s' }}>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-                <Button 
-                  size="lg" 
-                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
-                  onClick={() => window.open('tel:+917842640744')}
-                >
-                  Call +91 7842640744
-                  <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
-                </Button>
-                
-                <Button 
-                  size="lg" 
-                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
-                  onClick={() => window.open('tel:+916304746801')}
-                >
-                  Call +91 6304746801
-                  <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
-                </Button>
-              </div>
-              
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-6 sm:mb-8">
                 <Button 
                   size="lg" 
-                  variant="outline"
-                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
-                  onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                  className="w-full xs:w-auto max-w-[340px] sm:max-w-none bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/40 border-0"
+                  onClick={openModal}
                 >
-                  WhatsApp +91 7842640744
+                  Schedule Free Consultation
+                  <ArrowRight className="ml-4 h-6 sm:h-7 w-6 sm:w-7 group-hover:translate-x-2 transition-transform duration-300" />
                 </Button>
                 
                 <Button 
                   size="lg" 
                   variant="outline"
                   className="w-full xs:w-auto max-w-[340px] sm:max-w-none border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 hover:border-white/50 px-8 xs:px-12 sm:px-16 py-5 sm:py-8 text-lg xs:text-xl sm:text-xl rounded-2xl sm:rounded-3xl font-bold group transition-all duration-500 transform hover:scale-105 sm:hover:scale-110 shadow-2xl backdrop-blur-lg"
-                  onClick={() => window.open('https://wa.me/916304746801', '_blank')}
+                  onClick={openModal}
                 >
-                  WhatsApp +91 6304746801
+                  Get Honest Quote
                 </Button>
               </div>
               
@@ -486,9 +469,9 @@ export default function VizianagramInteriors() {
                   <Button 
                     size="lg" 
                     className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-600 hover:via-orange-600 hover:to-red-600 text-white px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
-                    onClick={() => window.open('tel:+917842640744')}
+                    onClick={openModal}
                   >
-                    Call +91 7842640744
+                    Get Free Consultation
                     <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
                   </Button>
                   
@@ -496,9 +479,9 @@ export default function VizianagramInteriors() {
                     size="lg" 
                     variant="outline"
                     className="w-full border-2 border-orange-500 text-orange-600 bg-orange-50 hover:bg-orange-100 px-8 py-6 text-xl rounded-2xl font-bold group transition-all duration-500 transform hover:scale-105 shadow-xl"
-                    onClick={() => window.open('https://wa.me/917842640744', '_blank')}
+                    onClick={openModal}
                   >
-                    WhatsApp +91 7842640744
+                    Get Transparent Quote
                   </Button>
                 </div>
               </div>
@@ -549,6 +532,8 @@ export default function VizianagramInteriors() {
           </div>
         </div>
       </section>
+      
+      <ContactModal triggerText="Get Free Consultation" />
     </div>
   );
 }
